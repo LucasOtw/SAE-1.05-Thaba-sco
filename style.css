@@ -99,7 +99,10 @@ body {
     width: 5px; /* Largeur de la barre */
     height: 75vh; /* Hauteur de la barre (hauteur de la fenêtre) */
     background-color: white; /* Couleur de la barre */
-    margin-top: 15px;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    margin-top : 15px;
 
   }
   
