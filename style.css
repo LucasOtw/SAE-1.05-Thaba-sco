@@ -1,22 +1,31 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Lato', sans-serif;
-    display : flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     background : black;
-
+    margin : 0;
+    position : relative;
+    height : 100%;
+    
 }
 
 .wrapper {
-    width : 420px;
-    background : black;
-    color : white;
-    border-radius : 10px;
-    padding : 30px 40px;
-
+        width: 420px;
+        background: black;
+        color: white;
+        border-radius: 10px;
+        padding: 30px 40px;
+        margin: 150px 100px 0em auto; 
+    
 }
+    
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
 
 .wrapper h1{
     font-size : 30px;
@@ -70,7 +79,7 @@ body {
 .wrapper .register-link {
     font-size : 15px;
     text-align: center;
-    margin : 20px
+    margin : 20px;
 
 }
 
@@ -78,6 +87,7 @@ body {
     color : blue;
     text-decoration: none;
     font-weight : 600;
+
 }
 
 .register-link p a:hover{
@@ -85,3 +95,11 @@ body {
 }
 
 
+.vertical-bar {
+    width: 5px; /* Largeur de la barre */
+    height: 75vh; /* Hauteur de la barre (hauteur de la fenêtre) */
+    background-color: white; /* Couleur de la barre */
+    margin-top: 15px;
+
+  }
+  
