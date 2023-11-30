@@ -15,7 +15,7 @@ body {
         color: white;
         border-radius: 10px;
         padding: 30px 40px;
-        margin: 150px 100px 0em auto; 
+        margin: 100px 100px 0em auto; 
     
 }
     
@@ -103,3 +103,43 @@ body {
 
   }
   
+.affichageavis{
+    border : 2px solid #EFCD1D;
+    background: #EFCD1D;
+    border-radius : 15px;
+    padding : 1em;
+    width : 550px;
+    position : absolute;
+    top : 12em;
+    margin : 2em;
+
+
+}
+
+.imageuser {
+    background-image: url('imageuser.png');
+    border-radius : 90px;
+    width: 52px;
+    height: 58px;
+    flex-shrink: 0; 
+}
+
+.affichageavis2{
+    border : 2px solid #C32525;
+    border-radius: 15px;
+    background: #C32525;
+    padding : 1em;
+    width : 550px;
+    position : absolute;
+    top : 30em;
+    margin : 2em;
+
+}
+
+.imageuser2 {
+    background-image: url('imageuser.png');
+    border-radius : 90px;
+    width: 52px;
+    height: 58px;
+    flex-shrink: 0; 
+}
