@@ -14,7 +14,7 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     font-size: 20px;
-    margin-left : 4em;
+    margin-left : 6em;
 }
 nav>ul>li>a{
     text-decoration: none;
@@ -39,33 +39,34 @@ nav ul {
   
   nav ul li {
     margin-right: 20px;
-    position: relative; /* Pour positionner le soulignement */
+    position: relative;
   }
   
   nav ul li a {
     text-decoration: none;
     color: white;
-    position: relative; /* Pour positionner le soulignement */
+    position: relative; 
   }
   
   nav ul li a::before {
     content: "";
     position: absolute;
     width: 0;
-    height: 2px; /* Hauteur du soulignement */
-    bottom: -4px; /* Position du soulignement par rapport au texte */
+    height: 2.5px; 
+    bottom: -4px; 
     background-color: white;
-    transition: width 0.3s ease; /* Transition pour l'animation */
+    transition: width 0.3s ease;
   }
   
   nav ul li a:hover::before {
-    width: 100%; /* Longueur du soulignement lors du survol */
+    width: 100%; 
   }
   
 
-h1 {
-    font-size: 30px;
+.wrapper h1 {  /* Ne fonctionne pas je ne sais pas pourquoi */
+    font-size: 10px; /* Taille de police de 24 pixels */
 }
+
 
 .wrapper {
         width: 420px;
@@ -73,7 +74,7 @@ h1 {
         color: white;
         border-radius: 10px;
         padding: 30px 40px;
-        margin: 100px 100px 0em auto; 
+        margin: 80px 30px 0em auto; 
 }
     
 .container {
@@ -170,7 +171,7 @@ h1 {
     padding : 1em;
     width : 550px;
     position : absolute;
-    top : 12em;
+    top : 15em;
     margin : 2em;
 
 
@@ -191,7 +192,7 @@ h1 {
     padding : 1em;
     width : 550px;
     position : absolute;
-    top : 30em;
+    top : 33em;
     margin : 2em;
 
 }
@@ -265,4 +266,16 @@ h1 {
     position: absolute;
     top:4px;
     right: 160px;
+}
+
+/* Sélection du paragraphe dans une section suivant immédiatement une div */
+div + section > p {
+    color: aliceblue;
+    padding: 2em;
+    position: absolute;
+    top: 8em; /* Place le paragraphe tout en haut de la fenêtre du navigateur */
+    left: 42%; /* Par défaut, le paragraphe sera centré horizontalement */
+    transform: translateX(-50%); /* Centre horizontalement le paragraphe */
+    width: 80%; /* Largeur du paragraphe */
+    font-size: 20px;
 }
