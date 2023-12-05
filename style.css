@@ -262,7 +262,6 @@ nav ul {
 .header-saison1 div button img{
     width: 26px;
     height: 34px;
-
     position: absolute;
     top:4px;
     right: 160px;
@@ -278,4 +277,11 @@ div + section > p {
     transform: translateX(-50%); /* Centre horizontalement le paragraphe */
     width: 80%; /* Largeur du paragraphe */
     font-size: 20px;
+}
+
+.titre-CompteUtilisateur {
+    color : white;
+    font-size: 20px;
+    margin-top : 6em;
+    margin-left : 2em;
 }
