@@ -6,8 +6,21 @@ body {
     margin : 0;
     position : relative;
     height : 100%;
-    
+    color: #fff;
 }
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
 nav{
     background-color: black;
     display: flex;
@@ -206,7 +219,11 @@ nav ul {
 }
 
 
-/* PAGE SAISON 1 (TOM)*/
+/******************************** PAGE SAISON 1 (TOM)*/
+
+.body-saison1 {
+    color: white;
+}
 
 .header-saison1{
     display: flex;
@@ -222,17 +239,17 @@ nav ul {
     padding-top: 10%;
 }
 
-.header-saison1 div {
+.div-affiche-saison1 {
     position: relative;
 }
 
-.header-saison1 div img{
+.affiche-saison1 {
     width: 1151px;
     height: 530px;
     border-radius: 15px;
 }
 
-.header-saison1 div button {
+.div-affiche-saison1 button {
     width: 210px;
     height: 44px;
 
@@ -247,7 +264,12 @@ nav ul {
     background: #EFCD1D;
 }
 
-.header-saison1 div button a {
+.moins16-saison1{
+    position: absolute;
+    top:4px;
+    right: 20px;
+}
+.div-affiche-saison1 button a { /* A REPLACER AU PX PRES */
     color: black;
     text-decoration: none;
     font-size: 24px;
@@ -259,7 +281,7 @@ nav ul {
     
 }
 
-.header-saison1 div button img{
+.div-affiche-saison1  button img{
     width: 26px;
     height: 34px;
     position: absolute;
@@ -267,16 +289,16 @@ nav ul {
     right: 160px;
 }
 
-/* Sélection du paragraphe dans une section suivant immédiatement une div */
-div + section > p {
-    color: aliceblue;
-    padding: 2em;
-    position: absolute;
-    top: 8em; /* Place le paragraphe tout en haut de la fenêtre du navigateur */
-    left: 42%; /* Par défaut, le paragraphe sera centré horizontalement */
-    transform: translateX(-50%); /* Centre horizontalement le paragraphe */
-    width: 80%; /* Largeur du paragraphe */
-    font-size: 20px;
+.div-sous-affiche-saison1 {
+    width: 1151px;
+    display: flex;
+
+    flex-direction: row;
+}
+
+.div-sous-affiche-saison1 div {
+    position: relative;
+    left: 945px;
 }
 
 .titre-CompteUtilisateur {
