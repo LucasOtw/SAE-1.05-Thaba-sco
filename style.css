@@ -1,6 +1,5 @@
 /* Styles généraux pour le corps de la page */
 body {
-<<<<<<< HEAD
     font-family: 'Josefin Sans', sans-serif; /* Police pour le texte */
     font-family: 'Lato', sans-serif; /* Une autre option de police */
     min-height: 100vh; /* Hauteur minimale de la vue */
@@ -8,16 +7,6 @@ body {
     margin: 0; /* Suppression des marges par défaut */
     position: relative; /* Position relative pour les éléments absolus */
     height: 100%; /* Hauteur de la page */
-=======
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Lato', sans-serif;
-    min-height: 100vh;
-    background : black;
-    margin : 0;
-    position : relative;
-    height : 100%;
-    
->>>>>>> 08d44ba514d0b1806925f7f4f260e5b6a92c9fcf
 }
 
 /* Styles pour différents niveaux de titres */
@@ -81,6 +70,7 @@ h3 {
         margin-right: 20px;
         position: relative;
     }
+}
 
 /* Effet de soulignement au survol des liens */
 nav ul li a::before {
@@ -116,7 +106,7 @@ nav ul li a:hover::before {
     color: white; /* Couleur du texte */
     border-radius: 10px; /* Bordures arrondies */
     padding: 30px 40px; 
-    margin: 80px 30px 0em auto; /* Marges du conteneur */
+    margin: 80px 30px 10em 57em; /* Marges du conteneur */
 }
 
 /* Styles pour les différents éléments du formulaire */
@@ -156,7 +146,7 @@ nav ul li a:hover::before {
 }
 
 .wrapper .btn {   /* modifier la taille du bouton*/
-    width : 100%;
+    width : 79%;
     height : 50px;
     background : #EFCD1D ;
     border : none;
@@ -167,7 +157,10 @@ nav ul li a:hover::before {
     font-size : 15px;
     color : black;
     font-weight: 600;
+    margin-left : 3.5em;
+    margin-top : 1em;
 }
+
 
 .wrapper .register-link {
     font-size : 15px;
@@ -193,7 +186,7 @@ nav ul li a:hover::before {
     height: 80vh;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    left: 47.5em;
+    left: 48.5em;
     top: 14em; /* Ajustez cette valeur pour positionner par rapport au haut */
 }
 
@@ -205,18 +198,10 @@ nav ul li a:hover::before {
     padding : 1em;
     width : 550px;
     position : absolute;
-    top : 15em;
+    top : 16em;
     margin : 2em;
 
 
-}
-
-.imageuser {
-    background-image: url('imageuser.png');
-    border-radius : 90px;
-    width: 52px;
-    height: 58px;
-    flex-shrink: 0; 
 }
 
 .affichageavis2{
@@ -230,13 +215,63 @@ nav ul li a:hover::before {
     margin : 2em;
 
 }
+.affichageavis img, .affichageavis2 img {
+    border-radius: 50%; 
+    width: 80px; 
+    height: 80px; 
+    margin-right: 10px; /* Espacement entre l'image et le texte */
+}
 
-.imageuser2 {
-    background-image: url('imageuser.png');
-    border-radius : 90px;
-    width: 52px;
-    height: 58px;
-    flex-shrink: 0; 
+
+.affichagepresse1 {
+    border : 2px solid #EFCD1D;
+    background: #EFCD1D;
+    border-radius : 15px;
+    padding : 1em;
+    width : 550px;
+    position : absolute;
+    top : 60em;
+    margin : 2em;
+}
+
+.affichagepresse2 {
+    border : 2px solid #EFCD1D;
+    background: #EFCD1D;
+    border-radius : 15px;
+    padding : 1em;
+    width : 550px;
+    position : absolute;
+    top : 77em;
+    margin : 2em;
+}
+
+.affichagepresse1 img, .affichagepresse2 img {
+    border-radius: 50%; 
+    width: 80px; 
+    height: 80px; 
+    margin-right: 10px; /* Espacement entre l'image et le texte */
+
+}
+
+.titrepresse > p {
+    padding-left : 2.5em;
+    color : rgb(255, 255, 255);
+    font-size: 20px;
+    top : 46.5em;
+    position : absolute;
+
+
+}
+
+
+div + section > p {
+    color : rgb(255, 255, 255);
+    font-size: 20px;
+    margin : 2em;
+    position: absolute;
+    top: 10em;
+    left: 0.5%; /* Vous pouvez ajuster la valeur left pour centrer l'élément si nécessaire */
+   
 }
 
                                         /*****************************************************
@@ -332,7 +367,6 @@ nav ul li a:hover::before {
     position: relative;
     left: 945px;
 }
-<<<<<<< HEAD
 
                                         /*****************************************************
                                                            * Fin code Tom *
@@ -348,5 +382,3 @@ nav ul li a:hover::before {
                                         /*****************************************************
                                                 * Fin code pour la d'accueil Guénolé *
                                         *****************************************************/
-=======
->>>>>>> 08d44ba514d0b1806925f7f4f260e5b6a92c9fcf
