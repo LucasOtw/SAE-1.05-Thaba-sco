@@ -1,5 +1,6 @@
 /* Styles généraux pour le corps de la page */
 body {
+<<<<<<< HEAD
     font-family: 'Josefin Sans', sans-serif; /* Police pour le texte */
     font-family: 'Lato', sans-serif; /* Une autre option de police */
     min-height: 100vh; /* Hauteur minimale de la vue */
@@ -7,6 +8,16 @@ body {
     margin: 0; /* Suppression des marges par défaut */
     position: relative; /* Position relative pour les éléments absolus */
     height: 100%; /* Hauteur de la page */
+=======
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    background : black;
+    margin : 0;
+    position : relative;
+    height : 100%;
+    
+>>>>>>> 08d44ba514d0b1806925f7f4f260e5b6a92c9fcf
 }
 
 /* Styles pour différents niveaux de titres */
@@ -321,6 +332,7 @@ nav ul li a:hover::before {
     position: relative;
     left: 945px;
 }
+<<<<<<< HEAD
 
                                         /*****************************************************
                                                            * Fin code Tom *
@@ -336,3 +348,5 @@ nav ul li a:hover::before {
                                         /*****************************************************
                                                 * Fin code pour la d'accueil Guénolé *
                                         *****************************************************/
+=======
+>>>>>>> 08d44ba514d0b1806925f7f4f260e5b6a92c9fcf
