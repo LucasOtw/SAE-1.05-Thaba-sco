@@ -1,16 +1,17 @@
+/* Styles généraux pour le corps de la page */
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Lato', sans-serif;
-    min-height: 100vh;
-    background : black;
-    margin : 0;
-    position : relative;
-    height : 100%;
-    color: #fff;
+    font-family: 'Josefin Sans', sans-serif; /* Police pour le texte */
+    font-family: 'Lato', sans-serif; /* Une autre option de police */
+    min-height: 100vh; /* Hauteur minimale de la vue */
+    background: black; /* Couleur de fond de la page */
+    margin: 0; /* Suppression des marges par défaut */
+    position: relative; /* Position relative pour les éléments absolus */
+    height: 100%; /* Hauteur de la page */
 }
 
+/* Styles pour différents niveaux de titres */
 h1 {
-    font-size: 30px;
+    font-size: 30px; 
 }
 
 h2 {
@@ -18,89 +19,99 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 15px; 
 }
-
-nav{
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 20px;
-    margin-left : 6em;
-}
-nav>ul>li>a{
-    text-decoration: none;
-    color: white;
-}
-
-nav>ul{
-    flex-grow: 0.5;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-nav>div{
-    margin-right: 2;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-    position: relative;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    position: relative; 
-  }
-  
-  nav ul li a::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2.5px; 
-    bottom: -4px; 
-    background-color: white;
-    transition: width 0.3s ease;
-  }
-  
-  nav ul li a:hover::before {
-    width: 100%; 
-  }
-  
-
-.wrapper h1 {  /* Ne fonctionne pas je ne sais pas pourquoi */
-    font-size: 10px; /* Taille de police de 24 pixels */
-}
-
-
-.wrapper {
-        width: 420px;
-        background: black;
+                                        /*****************************************************
+                                                * Code pour la barre de navigation*
+                                        *****************************************************/
+/* Style pour la barre de navigation */
+@media screen and (min-width: 768px){
+    .PetitNavHeader{
+        display: none;
+    }
+    .navHeader{
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        flex-grow: 3;
+        margin-top: 0.5em;
+        margin-left: 1.5em;
+    }
+    .navHeader>ul>li>a{
+        text-decoration: none;
         color: white;
-        border-radius: 10px;
-        padding: 30px 40px;
-        margin: 80px 30px 0em auto; 
-}
+    }
+    .LogoNavBarGauche{
+        display: flex;
+        align-items: center;
+    }
+    .navHeader>ul{
+        flex-grow: 0.5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: top;
+    }
+
+    .navHeader>div>img{
+        margin-right: 1.5em;
+    }
+
+    .navHeader ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
     
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100vh;
+    .navHeader ul li {
+        margin-right: 20px;
+        position: relative;
+    }
+
+/* Effet de soulignement au survol des liens */
+nav ul li a::before {
+    content: ""; /* Contenu vide pour l'effet de soulignement */
+    position: absolute; /* Positionnement absolu */
+    width: 0; /* Largeur initiale de la ligne de soulignement */
+    height: 2.5px; /* Hauteur de la ligne de soulignement */
+    bottom: -4px; /* Positionnement sous le texte */
+    background-color: white; /* Couleur du soulignement */
+    transition: width 0.3s ease; /* Transition fluide */
 }
 
+nav ul li a:hover::before {
+    width: 100%; /* Élargissement du soulignement au survol */
+}
+                                        /*****************************************************
+                                              *Fin Code pour la barre de navigation*
+                                        *****************************************************/
 
-.wrapper h1{
-    font-size : 30px;
-    text-align: center;
+
+
+
+                                        /*****************************************************
+                                                * Code Page Avis&Critiques Lucas *
+                                        *****************************************************/
+
+
+/* Styles pour le formulaire dans la classe .wrapper */
+.wrapper {
+
+    width: 420px; /* Largeur du conteneur */
+    background: black;
+    color: white; /* Couleur du texte */
+    border-radius: 10px; /* Bordures arrondies */
+    padding: 30px 40px; 
+    margin: 80px 30px 0em auto; /* Marges du conteneur */
+}
+
+/* Styles pour les différents éléments du formulaire */
+.wrapper h1 {
+    font-size: 30px; 
+    text-align: center; 
 }
 
 .wrapper .input-box{
@@ -167,15 +178,14 @@ nav ul {
 
 
 .vertical-bar {
-    width: 5px; /* Largeur de la barre */
-    height: 75vh; /* Hauteur de la barre (hauteur de la fenêtre) */
-    background-color: white; /* Couleur de la barre */
-    top : 50%;
-    left : 50%;
-    transform: translate(-50%, -50%);
-    margin-top : 15px;
+    width: 3px;
+    height: 80vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 47.5em;
+    top: 14em; /* Ajustez cette valeur pour positionner par rapport au haut */
+}
 
-  }
   
 .affichageavis{
     border : 2px solid #EFCD1D;
@@ -218,8 +228,18 @@ nav ul {
     flex-shrink: 0; 
 }
 
+                                        /*****************************************************
+                                                        * Fin code Lucas *
+                                        *****************************************************/
 
-/******************************** PAGE SAISON 1 (TOM)*/
+
+
+                                        /*****************************************************
+                                                      * Code  Saison 1 Tom *  
+                                        *****************************************************/
+
+
+                                        
 
 .body-saison1 {
     color: white;
@@ -284,6 +304,7 @@ nav ul {
 .div-affiche-saison1  button img{
     width: 26px;
     height: 34px;
+
     position: absolute;
     top:4px;
     right: 160px;
@@ -301,9 +322,17 @@ nav ul {
     left: 945px;
 }
 
-.titre-CompteUtilisateur {
-    color : white;
-    font-size: 20px;
-    margin-top : 6em;
-    margin-left : 2em;
-}
+                                        /*****************************************************
+                                                           * Fin code Tom *
+                                        *****************************************************/
+
+
+
+                                        /*****************************************************
+                                                * Code pour la d'accueil Guénolé *
+                                        *****************************************************/
+
+
+                                        /*****************************************************
+                                                * Fin code pour la d'accueil Guénolé *
+                                        *****************************************************/
