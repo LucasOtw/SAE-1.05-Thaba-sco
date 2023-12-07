@@ -106,12 +106,12 @@ nav ul li a:hover::before {
     color: white; /* Couleur du texte */
     border-radius: 10px; /* Bordures arrondies */
     padding: 30px 40px; 
-    margin: 80px 30px 10em 57em; /* Marges du conteneur */
+    margin: 100px 30px 10em 57em; /* Marges du conteneur */
 }
 
 /* Styles pour les différents éléments du formulaire */
 .wrapper h1 {
-    font-size: 30px; 
+    font-size: 20px; 
     text-align: center; 
 }
 
@@ -148,14 +148,14 @@ nav ul li a:hover::before {
 .wrapper .btn {   /* modifier la taille du bouton*/
     width : 79%;
     height : 50px;
-    background : #EFCD1D ;
-    border : none;
+    background : #000000 ;
+    border : 1px solid  #EFCD1D;
     outline : none;
     border-radius : 40px;
     box-shadow: 0 0 10px black;
     cursor : pointer;
     font-size : 15px;
-    color : black;
+    color : rgb(255, 255, 255);
     font-weight: 600;
     margin-left : 3.5em;
     margin-top : 1em;
@@ -169,12 +169,6 @@ nav ul li a:hover::before {
 
 }
 
-.register-link p a {
-    color : blue;
-    text-decoration: none;
-    font-weight : 600;
-
-}
 
 .register-link p a:hover{
     text-decoration : underline;
@@ -183,7 +177,7 @@ nav ul li a:hover::before {
 
 .vertical-bar {
     width: 3px;
-    height: 80vh;
+    height: 160vh;
     background-color: rgb(255, 255, 255);
     position: absolute;
     left: 48.5em;
@@ -273,7 +267,49 @@ div + section > p {
     left: 0.5%; /* Vous pouvez ajuster la valeur left pour centrer l'élément si nécessaire */
    
 }
+                                        /*****************************************************
+                                                * Code Page Profil  Lucas *
+                                        *****************************************************/
+.TitreProfilPage {
+    font-size : 20px;
+    color : white;
+    margin-top: 7.5em;
+    margin-left : 2em;
+}
 
+div > section {
+    border : 1px solid white;
+    border-radius : 15px;
+
+
+}
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
                                         /*****************************************************
                                                         * Fin code Lucas *
                                         *****************************************************/
