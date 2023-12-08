@@ -12,8 +12,8 @@
     <title>Profil Utilisateur</title>
 </head>
 <body>
-<header>
-        <nav>
+    <header>
+        <nav class="navHeader">
             <img src="images/LogoMenu.png" alt="Logo tabas'koh" height="45px" width="100px">
             <ul>
                 <li>
@@ -25,22 +25,74 @@
                 <li>
                     <a href="Avis&Critiques.html">Avis</a>
                 </li>
-                <li>
-                    <a href="https://matias.ma/nsfw/?fbclid=PAAab9E6ArJ4eHbXmz6lN_CC_8k62PVJrIQoV4oHXJWyn-hOovZsDpo0zwuT4" target="_blank">A propos</a>
-                </li>
-            </ul>
-            <div>
-                <img src="images/icones/icone_recherche.png" alt="Logo recherche" height="45px" width="45px">
-                <img src="images/icones/iconeCompte.png" alt="Logo compte" height="45px" width="45px">
+            <li>
+                <a href="https://matias.ma/nsfw/?fbclid=PAAab9E6ArJ4eHbXmz6lN_CC_8k62PVJrIQoV4oHXJWyn-hOovZsDpo0zwuT4" target="_blank">A propos</a>
+            </li>
+        </ul>
+            <div class="LogoNavBarGauche">
+                <img src="images/icones/icone_recherche.png" alt="Logo recherche" height="30px" width="30px">
+                <img src="images/icones/iconeCompte.png" alt="Logo compte" height="30px" width="30px">
             </div>
         </nav>
-</header>
+        <nav class="PetitNavHeader">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="images/icones/IconeAccueil.png" alt="Accueil" height="30px" width="30px"></a>
+                </li>
+                <li>
+                    <a href="Avis&Critiques.html"><img src="images/icones/IconeCritique.png" alt="Avis & Critiques" height="30px" width="30px"></a>
+                </li>
+                <li>
+                    <img src="images/icones/IconeARegarderPlusTard.png" alt="A regarded plus tard" height="30px" width="30px"></a>
+                </li>
+                <li>
+                    <img src="images/icones/IconeComptePetit.png" alt="Compte" height="30px" width="30px">
+                </li>
+            </ul>
+        </nav>
+    </header>
 <main>
-
-    <h1 class="titre-CompteUtilisateur">
+    <div class="TitreProfilPage">
         <p>
-        Votre espace compte
-        </p>
-    </h1>
+            Vos informations personnelles
+        <p>
+    </div>
+    <div class="InfosPersonnelles">
+        <img src="images/User2.jpeg" alt="Photo de profil 1">
+        <section>
+            <div class="wrapper2">
+                <form action="">
+                    <div class="input-box">
+                        <input type="Text" placeholder="Lucas Torres" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="14/12/2005"
+                        placeholder="14/12/2005" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <input type="lucas.torres.otw@gmail.com"
+                        placeholder="lucas.torres.otw@gmail.com" required>
+                    </div>
+        
+                    <button type="submit" class="btn">Editer les infos personnelles</button>
+                    <div class="register-link">
+                    </div>
+                    </div>
+            <p>
+                Lucas Torres
+            </p>
+            <p>
+                19 Janvier 2012
+            </p>
+            <p>
+                lucas.torres.otw@gmail.com
+            </p>
+        </section>
+    </div>
+
+    
+      
+
 </main>
 </body>
