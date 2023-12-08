@@ -415,6 +415,26 @@ div + section > p {
                                         *****************************************************/
 
 
+.ImageAPropos img { 
+    width: 400px; 
+    height: 160px; 
+    margin-top: 20em;
+    margin-left : 60em;
+
+}
+
+.NotreMission > h1 {  /* A modifier pour le titre en haut */
+    color : white;
+    text-align: center;
+    margin-top: 0;
+
+}
+
+.Nous p {
+    color : white;
+    padding : 6em;
+
+}
 
 
 
@@ -442,7 +462,6 @@ div + section > p {
 
 
 
-                                        
 
 
 
