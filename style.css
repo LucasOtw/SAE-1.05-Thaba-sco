@@ -455,6 +455,20 @@ div + section > p {
 }
                                         
 
+.Nous2 > p {
+    color: white;
+    max-width: 60%; 
+    text-align: justify;
+   
+}
+
+.first-letter2 {
+    font-size: 2em; 
+    font-weight: bold; 
+    color: white; 
+}
+                                        
+
 
 
 
