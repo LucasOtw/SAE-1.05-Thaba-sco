@@ -191,6 +191,12 @@ nav ul li a:hover::before {
     font-weight: 600;
     margin-left : 3.5em;
     margin-top : 1em;
+    transition: transform 0.5s ease-out;
+}
+.wrapper .btn:hover {
+    transform: scale(1.1); /* Appliquer l'effet de zoom au survol */
+    background-color: #EFCD1D;
+    color : black;
 }
 
 
@@ -389,6 +395,13 @@ div + section > p {
     font-weight: 600;
     margin-left : 3.5em;
     margin-top : 1em;
+    transition: transform 0.5s ease-out;
+}
+
+.wrapper2  .btn:hover {
+    transform: scale(1.1); /* Appliquer l'effet de zoom au survol */
+    background-color: #EFCD1D;
+    color : black;
 }
 
 
@@ -437,8 +450,15 @@ div + section > p {
 .ImageAPropos img {
     width: 400px;
     height: 150px;
+    object-fit: cover;
+    background-color: #000000;
+    transition : .3s linear;
 
+}
 
+.ImageAPropos:hover img {
+    opacity: 0.5;
+    transform : scale(1.2);
 }
                                         
 .Nous > p {
