@@ -305,6 +305,27 @@ div + section > p {
     left: 0.5%; /* Vous pouvez ajuster la valeur left pour centrer l'élément si nécessaire */
    
 }
+
+
+
+                                        /*****************************************************
+                                                * Code JS page Avis & Critiques *
+                                        *****************************************************/
+
+.reveal {
+    opacity : 0;
+    transform : translateY(-30px);
+
+}
+
+.reveal-visible {
+    opacity : 1;
+    transform : translateY(0);
+    transition: .3s;
+
+}
+
+
                                         /*****************************************************
                                                 * Code Page Profil  Lucas *
                                         *****************************************************/
