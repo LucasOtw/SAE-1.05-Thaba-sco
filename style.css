@@ -73,7 +73,7 @@ h3 {
         position: relative;
     }
 
-    Footer>div{
+    footer>div{
         display: flex;
         flex-direction: row;
     }
