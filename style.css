@@ -26,6 +26,7 @@ h3 {
                                                 * Code pour la barre de navigation*
                                         *****************************************************/
 /* Style pour la barre de navigation */
+/* Style pour la barre de navigation */
 @media screen and (min-width: 768px){
     .PetitNavHeader{
         display: none;
@@ -71,6 +72,16 @@ h3 {
         margin-right: 20px;
         position: relative;
     }
+
+    footer>div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer>div>p{
+        display:block;
+        color: #EFCD1D ;
+    }
 }
 @media screen and (max-width: 768px){
     .PetitNavHeader{
@@ -102,6 +113,16 @@ h3 {
     footer>div>p{
         display: none;
     }
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer>div{
+    align-self: center;
 }
 
 /* Effet de soulignement au survol des liens */
