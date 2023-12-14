@@ -1,5 +1,5 @@
 // Utilisation de l'API Interection Oberver pour l'apparition des éléments
-const ratio = 0.5;
+const ratio = 0.1;
 const options = {
   root: null, // Détection du scroll de la souris
   rootMargin: "0px", // Si besoin de marges
@@ -17,9 +17,3 @@ const intersectionCallback = function (entries, observer) {
 
 const observer = new IntersectionObserver(intersectionCallback, options);
 
-
-const intersection = function () {
-  console.log('Intersection');
-};
-
-observer.observe(document.querySelector('.reveal'));

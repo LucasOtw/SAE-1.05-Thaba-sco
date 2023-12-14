@@ -325,6 +325,18 @@ div + section > p {
 
 }
 
+.reveal1 {
+    opacity: 0;
+    transform: translate(-30px);
+}
+
+.reveal1-visible1 {
+    opacity : 1;
+    transform : translateY(0);
+    transition : .3s;
+
+}
+
 
                                         /*****************************************************
                                                 * Code Page Profil  Lucas *
@@ -440,7 +452,7 @@ div + section > p {
                                      
                              
                                         /*****************************************************
-                                                        * Fin code Lucas *
+                                                        * Fin code Avis&Critiques *
                                         *****************************************************/
 
 
@@ -509,33 +521,6 @@ div + section > p {
     color: white; 
 }
                                         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                        
-
 
 
                                         /*****************************************************
