@@ -7,7 +7,7 @@ body {
     margin: 0; /* Suppression des marges par défaut */
     position: relative; /* Position relative pour les éléments absolus */
     height: 100%; /* Hauteur de la page */
-
+    color: white;
 }
 
 /* Styles pour différents niveaux de titres */
