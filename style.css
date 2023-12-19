@@ -105,7 +105,7 @@ h3 {
         display: flex;
         background-color: #EFCD1D;
         position: fixed;
-        bottom: 5%;
+        bottom: 10%;
         left: 50%;
         transform: translateX(-50%);
         width: 90%;
@@ -656,7 +656,7 @@ div + section > p {
     border-radius: 15px;
 }
 .BackstageBody{
-    margin-bottom: 25%;
+    margin-bottom: 20%;
 }
 @media screen and (min-width: 768px){/* page en grand Ecran*/
     .petitEcran{
@@ -672,6 +672,9 @@ div + section > p {
     }
     .aCote>*{
         flex-shrink: 1;
+    }
+    .aCote div>figcaption{
+        text-wrap: nowrap;
     }
     .ARegarderPlusTard{
         display: flex;
@@ -740,16 +743,11 @@ div + section > p {
     .ARegarderPlusTard{
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        flex-wrap: nowrap;
+        margin-top: 8%;
     }
     .ARegarderPlusTard>p{
-        margin: 0;
-    }
-    .aCote div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: 0 0 0 4%;
+        text-wrap: nowrap;
     }
     .titreSection{
         align-self: center;
@@ -776,12 +774,14 @@ div + section > p {
         display: flex;
         flex-direction: column;
     }
-    .texteDuHaut div>*{
-        text-align: center;
-    }
     .miniature{
         display: flex;
         flex-direction: row;
+        margin: 3% 0 3% 0;
+        width: 60%;
+    }
+    .miniature>div{
+        margin-left: 3%;
     }
 }
 
