@@ -718,6 +718,10 @@ div + section > p {
     }
 }
 @media screen and (max-width: 768px){
+    .BackstageBody{
+        display: flex;
+        flex-direction: column;
+    }
     .grandEcran{
         display: none;
     }
@@ -737,6 +741,7 @@ div + section > p {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        flex-wrap: nowrap;
     }
     .ARegarderPlusTard>p{
         margin: 0;
@@ -748,6 +753,35 @@ div + section > p {
     }
     .titreSection{
         align-self: center;
+    }
+
+    .petitActeurs{
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 2;
+        align-items: start;
+        justify-content: flex-start;
+    }
+    .petitActeurs>figure{
+        margin: 1%;
+        width: 15%;
+    }
+    .petitActeurs>figure img{
+        width: 70%;
+        height: 70%;
+    }.titreSection{
+        margin-top: 13%;
+    }
+    .texteDuHaut div{
+        display: flex;
+        flex-direction: column;
+    }
+    .texteDuHaut div>*{
+        text-align: center;
+    }
+    .miniature{
+        display: flex;
+        flex-direction: row;
     }
 }
 
