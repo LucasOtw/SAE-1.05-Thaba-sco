@@ -50,6 +50,9 @@ h3 {
         display: flex;
         align-items: center;
     }
+    .LogoNavBarGauche>a{
+        margin-right: 1.5em;
+    }
     .navHeader>ul{
         flex-grow: 0.5;
         display: flex;
@@ -645,4 +648,110 @@ div + section > p {
 
                                         /*****************************************************
                                                 * Fin code pour la d'accueil Guénolé *
+                                        *****************************************************/
+                                        /*****************************************************
+                                                * Code pour Backstage Benjamin *
+                                        *****************************************************/
+.BackstageBody * img{
+    border-radius: 15px;
+}
+.BackstageBody{
+    margin-bottom: 25%;
+}
+@media screen and (min-width: 768px){/* page en grand Ecran*/
+    .petitEcran{
+        display: none;
+    }
+    .aCote{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+        margin-top:2% ;
+        padding: 0;
+    }
+    .aCote>*{
+        flex-shrink: 1;
+    }
+    .ARegarderPlusTard{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top:8% ;
+        margin-left: 8%;
+    }
+    .ARegarderPlusTard>p{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .aCote>p{
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 4%;
+        flex-grow: 2;
+    }
+    figcaption{
+        margin-left:8%;
+        margin-top: 10%;
+    }
+    .texteDuHaut{
+        margin-left: 2%;
+        align-items: center;
+    }
+    .texteDuHaut>div{
+        margin-left: 2%;
+    }
+    .acteur{
+        margin: 0;
+        flex-grow: 1;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .acteur>figcaption{
+        margin: 0;
+        margin-top: 4%;
+    }
+    .titreSection{
+        margin-left: 4%;
+        margin-top: 13%;
+    }
+}
+@media screen and (max-width: 768px){
+    .grandEcran{
+        display: none;
+    }
+    .aCote{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .texteDuHaut div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .ARegarderPlusTard{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .ARegarderPlusTard>p{
+        margin: 0;
+    }
+    .aCote div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titreSection{
+        align-self: center;
+    }
+}
+
+
+                                        /*****************************************************
+                                                * Fin code pour Backstage Benjamin *
                                         *****************************************************/
