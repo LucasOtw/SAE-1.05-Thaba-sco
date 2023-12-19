@@ -26,7 +26,6 @@ h3 {
                                                 * Code pour la barre de navigation*
                                         *****************************************************/
 /* Style pour la barre de navigation */
-/* Style pour la barre de navigation */
 @media screen and (min-width: 768px){
     .PetitNavHeader{
         display: none;
@@ -85,6 +84,21 @@ h3 {
         display:block;
         color: #EFCD1D ;
     }
+    
+    /* Effet de soulignement au survol des liens */
+    nav ul li a::before {
+        content: ""; /* Contenu vide pour l'effet de soulignement */
+        position: absolute; /* Positionnement absolu */
+        width: 0; /* Largeur initiale de la ligne de soulignement */
+        height: 2.5px; /* Hauteur de la ligne de soulignement */
+        bottom: -4px; /* Positionnement sous le texte */
+        background-color: white; /* Couleur du soulignement */
+        transition: width 0.3s ease; /* Transition fluide */
+    }
+
+    nav ul li a:hover::before {
+        width: 100%; /* Élargissement du soulignement au survol */
+}
 }
 @media screen and (max-width: 768px){
     .PetitNavHeader{
@@ -128,20 +142,6 @@ footer>div{
     align-self: center;
 }
 
-/* Effet de soulignement au survol des liens */
-nav ul li a::before {
-    content: ""; /* Contenu vide pour l'effet de soulignement */
-    position: absolute; /* Positionnement absolu */
-    width: 0; /* Largeur initiale de la ligne de soulignement */
-    height: 2.5px; /* Hauteur de la ligne de soulignement */
-    bottom: -4px; /* Positionnement sous le texte */
-    background-color: white; /* Couleur du soulignement */
-    transition: width 0.3s ease; /* Transition fluide */
-}
-
-nav ul li a:hover::before {
-    width: 100%; /* Élargissement du soulignement au survol */
-}
                                         /*****************************************************
                                               *Fin Code pour la barre de navigation*
                                         *****************************************************/
