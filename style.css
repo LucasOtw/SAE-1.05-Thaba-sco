@@ -1,8 +1,3 @@
-/* Styles généraux pour le corps de la page */
-html {
-    position: relative;
-    min-height: 100%;
-}
 body {
     font-family: 'Josefin Sans', sans-serif; /* Police pour le texte */
     font-family: 'Lato', sans-serif; /* Une autre option de police */
@@ -11,10 +6,8 @@ body {
     margin: 0; /* Suppression des marges par défaut */
     position: relative; /* Position relative pour les éléments absolus */
     height: 100%; /* Hauteur de la page */
-    color: white;
+    color: rgb(0, 0, 0);
     padding-bottom : 100px;
-    display : flex;
-    flex-direction: column;
 }
 
 /* Styles pour différents niveaux de titres */
@@ -220,8 +213,7 @@ footer>div{
     border : 1px solid  #EFCD1D;
     outline : none;
     border-radius : 40px;
-    box-shadow: 0 0 10px black;
-    cursor : pointer;
+    box-shadow: 0 0 10px black;cursor : pointer;
     font-size : 15px;
     color : rgb(255, 255, 255);
     font-weight: 600;
@@ -251,96 +243,100 @@ footer>div{
 
 .vertical-bar {
     width: 3px;
-    height: 160vh;
+    height: 75vh;
     background-color: rgb(255, 255, 255);
     position: absolute;
     left: 48.5em;
     top: 14em; /* Ajustez cette valeur pour positionner par rapport au haut */
 }
 
-  
-.affichageavis{
-    border : 2px solid #EFCD1D;
-    background: #EFCD1D;
-    border-radius : 15px;
-    padding : 1em;
-    width : 550px;
-    position : absolute;
-    top : 16em;
-    margin : 2em;
-
-
-}
-
-.affichageavis2{
-    border : 2px solid #C32525;
-    border-radius: 15px;
-    background: #C32525;
-    padding : 1em;
-    width : 550px;
-    position : absolute;
-    top : 33em;
-    margin : 2em;
-
-}
-.affichageavis img, .affichageavis2 img {
-    border-radius: 50%; 
-    width: 80px; 
-    height: 80px; 
-    margin-right: 10px; /* Espacement entre l'image et le texte */
-}
-
-
-.affichagepresse1 {
-    border : 2px solid #EFCD1D;
-    background: #EFCD1D;
-    border-radius : 15px;
-    padding : 1em;
-    width : 550px;
-    position : absolute;
-    top : 60em;
-    margin : 2em;
-}
-
-.affichagepresse2 {
-    border : 2px solid #EFCD1D;
-    background: #EFCD1D;
-    border-radius : 15px;
-    padding : 1em;
-    width : 550px;
-    position : absolute;
-    top : 77em;
-    margin : 2em;
-}
-
-.affichagepresse1 img, .affichagepresse2 img {
-    border-radius: 50%; 
-    width: 80px; 
-    height: 80px; 
-    margin-right: 10px; /* Espacement entre l'image et le texte */
-
-}
-
-.titrepresse > p {
-    padding-left : 2.5em;
-    color : rgb(255, 255, 255);
-    font-size: 20px;
-    top : 46.5em;
-    position : absolute;
-
-
-}
-
-
-div + section > p {
-    color : rgb(255, 255, 255);
-    font-size: 20px;
-    margin : 2em;
+.afficherAvis1 {
+    border: 1px solid #C32525;
+    background-color: #C32525;
+    height: 143px;
+    width: 30em;
+    padding: 1em;
+    margin-left: 1em;
+    margin-top: 2em;
     position: absolute;
-    top: 10em;
-    left: 0.5%; /* Vous pouvez ajuster la valeur left pour centrer l'élément si nécessaire */
+    top: 15em; /* Place le bloc en haut de la page */
+    left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
+    transform: translateX(-50%); /* Recentre horizontalement le bloc */
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.afficherAvis1 img {
+    width: 70px; /* Taille de l'image */
+    height: 70px; /* Taille de l'image */
+    border-radius: 50%; /* Arrondit l'image */
+    object-fit: cover; /* Ajuste la taille de l'image sans déformer */
+    margin-right: 20px; /* Espacement entre l'image et le texte */
+    float: left; /* Place l'image à gauche du texte */
+}
+
+.afficherAvis2 {
+    border: 1px solid #C32525;
+    background-color: #C32525;
+    height: 143px;
+    width: 30em;
+    padding: 1em;
+    margin-left: 1em;
+    margin-top: 2em;
+    position: absolute;
+    top: 27em; /* Place le bloc en haut de la page */
+    left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
+    transform: translateX(-50%); /* Recentre horizontalement le bloc */
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.afficherAvis2 img {
+    width: 70px; /* Taille de l'image */
+    height: 70px; /* Taille de l'image */
+    border-radius: 50%; /* Arrondit l'image */
+    object-fit: cover; /* Ajuste la taille de l'image sans déformer */
+    margin-right: 20px; /* Espacement entre l'image et le texte */
+    float: left; /* Place l'image à gauche du texte */
+}
+
+
+.afficherAvis3 {
+    border: 1px solid #EFCD1D;
+    background-color: #EFCD1D;
+    height: 143px;
+    width: 30em;
+    padding: 1em;
+    margin-left: 1em;
+    margin-top: 2em;
+    position: absolute;
+    top: 39em; /* Place le bloc en haut de la page */
+    left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
+    transform: translateX(-50%); /* Recentre horizontalement le bloc */
+    border-radius: 14px;
+    overflow: hidden;
+
+}
+
+.afficherAvis3 img {
+    width: 70px; /* Taille de l'image */
+    height: 70px; /* Taille de l'image */
+    border-radius: 50%; /* Arrondit l'image */
+    object-fit: cover; /* Ajuste la taille de l'image sans déformer */
+    margin-right: 20px; /* Espacement entre l'image et le texte */
+    float: left; /* Place l'image à gauche du texte */
+}
+
+.titreavis {
+    color: white;
+    font-size: 20px;
+    margin : 1em;
+    position: absolute;
+    top: 8.5em;
+    left: 0%; /* Vous pouvez ajuster la valeur left pour centrer l'élément si nécessaire */
    
 }
+
 
 
 
