@@ -1,4 +1,8 @@
 /* Styles généraux pour le corps de la page */
+html {
+    position: relative;
+    min-height: 100%;
+}
 body {
     font-family: 'Josefin Sans', sans-serif; /* Police pour le texte */
     font-family: 'Lato', sans-serif; /* Une autre option de police */
@@ -8,6 +12,9 @@ body {
     position: relative; /* Position relative pour les éléments absolus */
     height: 100%; /* Hauteur de la page */
     color: white;
+    padding-bottom : 100px;
+    display : flex;
+    flex-direction: column;
 }
 
 /* Styles pour différents niveaux de titres */
@@ -137,6 +144,11 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: absolute;
+    bottom : 0;
+    width: 100%;
+    height: 1em;
+    align-items: center;
 }
 footer>div{
     align-self: center;
@@ -375,7 +387,7 @@ div + section > p {
     color: white; /* Couleur du texte */
     border-radius: 10px; /* Bordures arrondies */
     padding: 30px 40px; 
-    margin: 20px 200px 100em 2.5em; /* Marges du conteneur */
+    margin: 20px 10px 10em 2.5em; /* Marges du conteneur */
 }
 
 /* Styles pour les différents éléments du formulaire */
