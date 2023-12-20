@@ -336,30 +336,6 @@ div + section > p {
                                                 * Code JS page Avis & Critiques *
                                         *****************************************************/
 
-.reveal {
-    opacity : 0;
-    transform : translateY(-30px);
-
-}
-
-.reveal-visible {
-    opacity : 1;
-    transform : translateY(0);
-    transition: .3s;
-
-}
-
-.reveal1 {
-    opacity: 0;
-    transform: translate(-30px);
-}
-
-.reveal1-visible1 {
-    opacity : 1;
-    transform : translateY(0);
-    transition : .3s;
-
-}
 
 
                                         /*****************************************************
