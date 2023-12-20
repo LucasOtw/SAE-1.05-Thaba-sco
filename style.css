@@ -140,7 +140,7 @@ footer{
     position: absolute;
     bottom : 0;
     width: 100%;
-    height: 1em;
+    height: 0em;
     align-items: center;
 }
 footer>div{
@@ -362,16 +362,17 @@ footer>div{
     height : 650px;
     width : 600px;
     margin-left : 30em;
+    overflow: hidden;
 }
 
 .InfosPersonnelles img {
-    border-radius: 50%; 
-    width: 150px; 
-    height: 140px; 
-    margin-right: 10px;
-    border : 1px solid white;
-    margin-top: 3em;
-    margin-left : 13em;
+    width: 140px; /* Taille de l'image */
+    height: 140px; /* Taille de l'image */
+    border-radius: 50%; /* Arrondit l'image */
+    object-fit: cover; /* Ajuste la taille de l'image sans déformer */
+    margin-left: 14em; /* Espacement entre l'image et le texte */
+    margin-top: 2em;
+
 
 }
 
