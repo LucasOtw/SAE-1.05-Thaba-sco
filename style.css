@@ -626,14 +626,248 @@ footer>div{
 
 
 
+
                                         /*****************************************************
-                                                * Code pour la d'accueil Guénolé *
+                                                * Guénolé *
                                         *****************************************************/
 
 
                                         /*****************************************************
-                                                * Fin code pour la d'accueil Guénolé *
+                                              *code Page Principal guenole*
                                         *****************************************************/
+
+
+.affiche{
+    background-image: url(images/principale_image\ de_fond_BB.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 3em; 
+    
+}
+
+.flex1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center; 
+    margin-top: 40%;
+    margin-left: -13em;
+    
+}
+
+.voir_saison{
+    background-color:#efcd1d;
+    width: 138px;
+    height:  40px; 
+    color: black;
+    text-decoration: none;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; 
+
+}
+
+.BO-mots_clée{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+div>h4{
+    margin-left: 1em; 
+}
+
+.BandeAnnonce{
+    display: flex;
+    flex-direction: row;
+}
+
+.avisBO{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.avisBO figure{
+    margin: 14px;
+}
+.flex-container{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container,.voir{
+    margin-left: 10px;
+    
+}
+
+
+.voir:visited{
+    color: #efcd1d;
+}
+.voir:hover{
+    color: #0000ff;
+}
+
+.espacePourRien{
+    margin-left: 8px;
+}
+
+.motsClée{
+    margin-top: 6em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titre{
+    color: #efcd1d;
+}
+.resumer{
+    display: flex;
+    flex-direction:column ;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5em;
+    margin-top: 1em;
+    border: 1px inset #efcd1d;
+    border-radius: 2em;
+    margin-left: 10%;
+
+}
+
+.text{
+    margin-left: 10px;
+}
+
+.motsClée li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.motsClée a{
+    background-color: #efcd1d;
+    width: 180px;
+    height: 45px;
+    border-radius: 5em;
+    color: black;
+    padding: 10 px;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.motsClée a:hover, .voir_saison:hover{
+    background-color: black;
+    color: #efcd1d;
+    border: 2px inset ;
+    border-radius: #efcdef;
+}
+
+.motsClée p{
+    text-align: center;
+    margin-top: 1px;
+}
+
+.ligneAR{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
+
+.acteur1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0em;
+    max-width: 45%;
+}
+
+.acteur1 em {
+    text-shadow: 0 0 10px #fff,
+                 0 0 10px #efcd1d,
+                 0 0 10px #efcd1d;
+    
+}
+
+.acteur1 img{
+    border-radius: 150px;
+    box-shadow: 13px -9px 15px -4px #efcd1d ;
+    transition: tranform .3s linear;
+    object-fit: cover ;
+    background-color: black;
+
+}
+
+.acteur1 img:hover{
+    box-shadow: 13px -9px 15px -4px #efcd1d ;
+    transform: scale(1.2);
+
+
+}
+
+.prix{
+    border: 1px inset #efcd1d;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50% ;
+    margin-left: 50%;
+    margin-top: -13em;
+}
+
+
+.espace{
+    margin-top: 8em;
+    margin-left: 1em;
+}
+.pourvous{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+   
+
+}
+
+.colonne{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ligne{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.pourvous img{
+    border-radius: 15px;
+}
+
+
+                                        /*****************************************************
+                                              *Fin code Page Principal guenole*
+                                        *****************************************************/
+
                                         /*****************************************************
                                                 * Code pour Backstage Benjamin *
                                         *****************************************************/
