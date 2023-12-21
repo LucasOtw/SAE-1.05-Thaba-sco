@@ -6,7 +6,7 @@ body {
     margin: 0; /* Suppression des marges par défaut */
     position: relative; /* Position relative pour les éléments absolus */
     height: 100%; /* Hauteur de la page */
-    color: rgb(0, 0, 0);
+    color: #fff;
     padding-bottom : 100px;
 }
 
