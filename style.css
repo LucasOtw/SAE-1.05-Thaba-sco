@@ -264,6 +264,7 @@ footer>div{
     transform: translateX(-50%); /* Recentre horizontalement le bloc */
     border-radius: 14px;
     overflow: hidden;
+    color : black;
 }
 
 .afficherAvis1 img {
@@ -289,6 +290,8 @@ footer>div{
     transform: translateX(-50%); /* Recentre horizontalement le bloc */
     border-radius: 14px;
     overflow: hidden;
+    color : black;
+
 }
 
 .afficherAvis2 img {
@@ -315,6 +318,8 @@ footer>div{
     transform: translateX(-50%); /* Recentre horizontalement le bloc */
     border-radius: 14px;
     overflow: hidden;
+    color : black;
+    
 
 }
 
