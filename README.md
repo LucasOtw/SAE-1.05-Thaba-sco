@@ -18,8 +18,10 @@ Le projet Tabasko a été réalisé par une équipe de 4 développeurs, travaill
 ## Technologies Utilisées
 
 Le projet a été développé en utilisant les technologies suivantes :
-- HTML : ![HTML5](https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg) HTML5
-- CSS : ![CSS3](https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg) CSS3
+- HTML : <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" width="15" height="15"/> HTML5
+- CSS : <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" width="15" height="15"/> CSS3
+- JavaScript : <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" width="15" height="15"/> JavaScript
+
 
 
 
