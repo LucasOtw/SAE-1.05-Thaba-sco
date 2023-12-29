@@ -23,7 +23,7 @@ h3 {
     font-size: 15px; 
 }
                                         /*****************************************************
-                                                * Code pour la barre de navigation*
+                                                     * Code header + footer *
                                         *****************************************************/
 /* Style pour la barre de navigation */
 @media screen and (min-width: 768px){
@@ -155,191 +155,276 @@ footer>div{
 
 
                                         /*****************************************************
-                                                * Code Page Avis&Critiques Lucas *
+                                                * Code Page Avis & Critiques *
                                         *****************************************************/
 
 
-/* Styles pour le formulaire dans la classe .wrapper */
 .wrapper {
+        width: 100%;
+        max-width: 420px;
+        background: black;
+        color: white;
+        border-radius: 10px;
+        padding: 30px 20px;
+        margin: 4em 8em 2em auto; /* Ajustez la marge pour centrer verticalement */
+        position : relative;
+    }
+        
+    /* Styles pour les différents éléments du formulaire */
+    .wrapper h1 {
+        font-size: 20px; 
+        text-align: center; 
+    }
+    
+    .wrapper .TitreResponsive {
+       display : none;
+    }
+    
+    .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        background: black;
+        margin: 30px 0;
+    }
+    
+    .input-box input {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 40px;
+        font-size: 15px;
+        color: white;
+        padding-left: 15px;
+        outline: none;
+    }
+    
+    .input-box i {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 15px;
+    }
+    
+    .wrapper .btn {
+        width: 79%;
+        height: 50px;
+        background: #000000;
+        border: 1px solid #EFCD1D;
+        outline: none;
+        border-radius: 70px;
+        box-shadow: 0 0 10px black;
+        cursor: pointer;
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        margin-left: 3.5em;
+        margin-top: 1em;
+        transition: transform 0.5s ease-out;
+    }
+    
+    .wrapper .btn:hover {
+        transform: scale(1.1);
+        background-color: #EFCD1D;
+        color: black;
+    }
+    
+    .wrapper .register-link {
+        font-size: 15px;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .register-link p a:hover {
+        text-decoration: underline;
+    }
+    
+    .vertical-bar {
+        width: 3px;
+        height: 75vh;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 48.5em;
+        top: 14em;
+    }
+    
+    .afficherAvis1 {
+        border: 1px solid #C32525;
+        background-color: #C32525;
+        height: 135px;
+        width: 480px;
+        padding: 1em;
+        margin-left: 1em;
+        margin-top: 2em;
+        position: absolute;
+        top: 14em; /* Place le bloc en haut de la page */
+        left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
+        transform: translateX(-50%); /* Recentre horizontalement le bloc */
+        border-radius: 14px;
+        overflow: hidden;
+        color : black;
+    }
+    
+    .afficherAvis1 img {
+        width: 70px; /* Taille de l'image */
+        height: 70px; /* Taille de l'image */
+        border-radius: 50%; /* Arrondit l'image */
+        object-fit: cover; /* Ajuste la taille de l'image sans déformer */
+        margin-right: 20px; /* Espacement entre l'image et le texte */
+        float: left; /* Place l'image à gauche du texte */
+    }
+    
+    .afficherAvis2 {
+        border: 1px solid #C32525;
+        background-color: #C32525;
+        height: 135px;
+        width: 480px;
+        padding: 1em;
+        margin-left: 1em;
+        margin-top: 2em;
+        position: absolute;
+        top: 26em; /* Place le bloc en haut de la page */
+        left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
+        transform: translateX(-50%); /* Recentre horizontalement le bloc */
+        border-radius: 14px;
+        overflow: hidden;
+        color : black;
+    
+    }
+    
+    .afficherAvis2 img {
+        width: 70px; /* Taille de l'image */
+        height: 70px; /* Taille de l'image */
+        border-radius: 50%; /* Arrondit l'image */
+        object-fit: cover; /* Ajuste la taille de l'image sans déformer */
+        margin-right: 20px; /* Espacement entre l'image et le texte */
+        float: left; /* Place l'image à gauche du texte */
+    }
+    
+    
+    .afficherAvis3 {
+        border: 1px solid #EFCD1D;
+        background-color: #EFCD1D;
+        height: 135px;
+        width: 480px;
+        padding: 1em;
+        margin-left: 1em;
+        margin-top: 2em;
+        position: absolute;
+        top: 38em; /* Place le bloc en haut de la page */
+        left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
+        transform: translateX(-50%); /* Recentre horizontalement le bloc */
+        border-radius: 14px;
+        overflow: hidden;
+        color : black;
+        
+    }
+    
+    .afficherAvis3 img {
+        width: 70px; /* Taille de l'image */
+        height: 70px; /* Taille de l'image */
+        border-radius: 50%; /* Arrondit l'image */
+        object-fit: cover; /* Ajuste la taille de l'image sans déformer */
+        margin-right: 20px; /* Espacement entre l'image et le texte */
+        float: left; /* Place l'image à gauche du texte */
+    }
+    
+    .titreavis {
+        color: white;
+        font-size: 20px;
+        margin : 1em;
+        position: absolute;
+        top: 8.5em;
+        left: 0%; /* Vous pouvez ajuster la valeur left pour centrer l'élément si nécessaire */
+       
+    }
 
-    width: 420px; /* Largeur du conteneur */
-    background: black;
-    color: white; /* Couleur du texte */
-    border-radius: 10px; /* Bordures arrondies */
-    padding: 30px 40px; 
-    margin: 100px 30px 10em 57em; /* Marges du conteneur */
-}
-
-/* Styles pour les différents éléments du formulaire */
-.wrapper h1 {
-    font-size: 20px; 
-    text-align: center; 
-}
-
-.wrapper .input-box{
-    position : relative;
-    width : 100%;
-    height : 50px;
-    background : black;
-    margin : 30px 0;
-
-}
-
-.input-box input {
-    width : 100%;
-    height : 100%;
-    background: transparent;
-    border : none;
-    outline : none;
-    border : 2px solid white;
-    border-radius : 40px;
-    font-size : 15px;
-    color : white;
-    padding-left : 15px;
-}
-
-.input-box i {
-    position : absolute;
-    right : 20px;
-    top : 50%;
-    transform : translateY(-50%);
-    font-size : 15px;
-}
-
-.wrapper .btn {   /* modifier la taille du bouton*/
-    width : 79%;
-    height : 50px;
-    background : #000000 ;
-    border : 1px solid  #EFCD1D;
-    outline : none;
-    border-radius : 40px;
-    box-shadow: 0 0 10px black;cursor : pointer;
-    font-size : 15px;
-    color : rgb(255, 255, 255);
-    font-weight: 600;
-    margin-left : 3.5em;
-    margin-top : 1em;
-    transition: transform 0.5s ease-out;
-}
-.wrapper .btn:hover {
-    transform: scale(1.1); /* Appliquer l'effet de zoom au survol */
-    background-color: #EFCD1D;
-    color : black;
-}
-
-
-.wrapper .register-link {
-    font-size : 15px;
-    text-align: center;
-    margin : 20px;
-
-}
-
-
-.register-link p a:hover{
-    text-decoration : underline;
-}
-
-
-.vertical-bar {
-    width: 3px;
-    height: 75vh;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    left: 48.5em;
-    top: 14em; /* Ajustez cette valeur pour positionner par rapport au haut */
-}
-
-.afficherAvis1 {
-    border: 1px solid #C32525;
-    background-color: #C32525;
-    height: 143px;
-    width: 30em;
-    padding: 1em;
-    margin-left: 1em;
-    margin-top: 2em;
-    position: absolute;
-    top: 15em; /* Place le bloc en haut de la page */
-    left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
-    transform: translateX(-50%); /* Recentre horizontalement le bloc */
-    border-radius: 14px;
-    overflow: hidden;
-    color : black;
-}
-
-.afficherAvis1 img {
-    width: 70px; /* Taille de l'image */
-    height: 70px; /* Taille de l'image */
-    border-radius: 50%; /* Arrondit l'image */
-    object-fit: cover; /* Ajuste la taille de l'image sans déformer */
-    margin-right: 20px; /* Espacement entre l'image et le texte */
-    float: left; /* Place l'image à gauche du texte */
-}
-
-.afficherAvis2 {
-    border: 1px solid #C32525;
-    background-color: #C32525;
-    height: 143px;
-    width: 30em;
-    padding: 1em;
-    margin-left: 1em;
-    margin-top: 2em;
-    position: absolute;
-    top: 27em; /* Place le bloc en haut de la page */
-    left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
-    transform: translateX(-50%); /* Recentre horizontalement le bloc */
-    border-radius: 14px;
-    overflow: hidden;
-    color : black;
-
-}
-
-.afficherAvis2 img {
-    width: 70px; /* Taille de l'image */
-    height: 70px; /* Taille de l'image */
-    border-radius: 50%; /* Arrondit l'image */
-    object-fit: cover; /* Ajuste la taille de l'image sans déformer */
-    margin-right: 20px; /* Espacement entre l'image et le texte */
-    float: left; /* Place l'image à gauche du texte */
-}
-
-
-.afficherAvis3 {
-    border: 1px solid #EFCD1D;
-    background-color: #EFCD1D;
-    height: 143px;
-    width: 30em;
-    padding: 1em;
-    margin-left: 1em;
-    margin-top: 2em;
-    position: absolute;
-    top: 39em; /* Place le bloc en haut de la page */
-    left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
-    transform: translateX(-50%); /* Recentre horizontalement le bloc */
-    border-radius: 14px;
-    overflow: hidden;
-    color : black;
+    .titrePage {
+        display: none;
+    }
     
 
-}
+    @media screen and (max-width: 767px) {
+    .wrapper {
+        padding: 30px 40px;
+        top: 47em; 
+        background-color: transparent;
+    }
 
-.afficherAvis3 img {
-    width: 70px; /* Taille de l'image */
-    height: 70px; /* Taille de l'image */
-    border-radius: 50%; /* Arrondit l'image */
-    object-fit: cover; /* Ajuste la taille de l'image sans déformer */
-    margin-right: 20px; /* Espacement entre l'image et le texte */
-    float: left; /* Place l'image à gauche du texte */
-}
+    /* Styles pour les appareils mobiles */
+    .afficherAvis1,
+    .afficherAvis2,
+    .afficherAvis3 {
+        width: 70%; 
+        left: 7%; 
+        transform: translateX(0); 
+        margin-left : 1em;
+    }
 
-.titreavis {
-    color: white;
-    font-size: 20px;
-    margin : 1em;
-    position: absolute;
-    top: 8.5em;
-    left: 0%; /* Vous pouvez ajuster la valeur left pour centrer l'élément si nécessaire */
-   
+    .afficherAvis1 {
+        top : 3em;
+    }
+
+    .afficherAvis2 {
+        top : 15em;
+    }
+
+    .afficherAvis3 {
+        top : 27em;
+    }
+
+    footer {
+        top : 90em;
+    }
+
+    .vertical-bar {
+        display : none;
+    }
+
+    .input-box {
+        width : 80%;
+        background-color: transparent;
+    }
+
+    .wrapper .btn {
+       width: 250px;
+       background-color: transparent;
+    }
+
+    .titreavis {
+        position: absolute;
+        top: 0; /* Aligner en haut de la page */
+        left: 45%; /* Déplacer vers le milieu horizontalement */
+        transform: translateX(-50%); /* Centrer horizontalement */
+        text-align: center; /* Centrer le texte */
+        width: 100%; /* Prend toute la largeur disponible */
+    }
+    .horizontale-bar {
+        width: 79vw; /* Largeur de 75% de la largeur de la vue (viewport width) */
+        height: 2px; /* Hauteur de la barre */
+        background-color: rgb(255, 255, 255); /* Couleur de fond */
+        position: absolute; /* Position absolue */
+        top: 86%; /* Position à 50% de la hauteur de son conteneur parent */
+        left: 50%; /* Position à 50% de la largeur de son conteneur parent */
+        transform: translate(-50%, -50%); /* Centrage au milieu de son conteneur */
+    }
+
+    .titrePage {
+        display: block; /* Afficher l'élément */
+        position: absolute;
+        top: 0; /* Aligner en haut de la page */
+        left: 45%; /* Déplacer vers le milieu horizontalement */
+        transform: translateX(-50%); /* Centrer horizontalement */
+        text-align: center; /* Centrer le texte */
+        width: 100%; /* Prend toute la largeur disponible */
+        font-size : 30px;
+    }
+    
+
+ 
+    
 }
 
 
@@ -533,6 +618,10 @@ footer>div{
     font-size: 2em; 
     font-weight: bold; 
     color: white; 
+}
+
+.wrapper h1 {
+    margin-right: 3em;
 }
                                         
 
