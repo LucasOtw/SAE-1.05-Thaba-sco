@@ -711,7 +711,29 @@ footer>div{
     border-radius: 15px;
     margin-right: 3px; /* Ajout de marges entre les images */
 }
-                                        
+
+
+
+.searchbox {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px black;
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: width 0.8s, padding 0.8s; /* Ajout de la transition pour la largeur et le padding */
+}
+
+.searchbox:hover {
+    width: 400px;
+    padding: 10px; /* Ajustement du padding lors du survol */
+}
 
 
 

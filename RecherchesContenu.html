@@ -59,23 +59,12 @@
     </nav>
 </header>
 <body>
-    <style>
-        #search {
-            border-radius: 30px;
-            border: 2px solid black;
-        }
+    
+<div class="searchbox">
+    <input type="search" id ="search" value="" placeholder="Chercher le nom d'une série">
+    <input type="button" id="button" onclick="chercherContenu()" value="Chercher">
+</div>
 
-        #button {
-            background-color: aqua;
-            border: 0px solid black;
-            height: 30px;
-            border-radius: 30px;
-            cursor: pointer;
-        }
-    </style>
-
-<input type="search" id="search" value="">
-<input type="button" id="button" onclick="chercherContenu()" value="Chercher">
 
 <p id="contenu">
     Les series correspondantes
