@@ -439,117 +439,153 @@ footer>div{
                                         /*****************************************************
                                                 * Code Page Profil  Lucas *
                                         *****************************************************/
-.TitreProfilPage {
-    font-size : 20px;
-    color : white;
-    margin-top: 7.5em;
-    margin-left : 32em;
+/* Styles pour les ordinateurs de bureau */
+@media screen and (min-width: 768px) {
+    .TitreProfilPage {
+        font-size: 20px;
+        color: white;
+        margin-top: 7.5em;
+        margin-left: 32em;
+    }
+
+    .InfosPersonnelles {
+        border: 1px solid white;
+        border-radius: 15px;
+        height: 650px;
+        width: 600px;
+        margin-left: 30em;
+        overflow: hidden;
+    }
+
+    .InfosPersonnelles img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 14em;
+        margin-top: 2em;
+    }
+
+    .wrapper2 {
+        width: 420px;
+        background: black;
+        color: white;
+        border-radius: 10px;
+        padding: 30px 40px;
+        margin: 20px 10px 10em 2.5em;
+    }
+    .wrapper2 .btn {   /* modifier la taille du bouton*/
+        width : 79%;
+        height : 50px;
+        background : #000000 ;
+        border : 1px solid  #EFCD1D;
+        outline : none;
+        border-radius : 40px;
+        box-shadow: 0 0 10px black;
+        cursor : pointer;
+        font-size : 15px;
+        color : rgb(255, 255, 255);
+        font-weight: 600;
+        margin-left : 3.5em;
+        margin-top : 1em;
+        transition: transform 0.5s ease-out;
+    }
+    .wrapper2  .btn:hover {
+        transform: scale(1.1); /* Appliquer l'effet de zoom au survol */
+        background-color: #EFCD1D;
+        color : black;
+    }
+    
+    
+    .wrapper2 .register-link {
+        font-size : 15px;
+        text-align: center;
+        margin : 20px;
+    
+    }
+    
+    
+    .register-link p a:hover{
+        text-decoration : underline;
+    }
 }
 
-.InfosPersonnelles {
-    border : 1px solid white;
-    border-radius : 15px;
-    height : 650px;
-    width : 600px;
-    margin-left : 30em;
-    overflow: hidden;
-}
+/* Styles pour les smartphones */
+@media screen and (max-width: 767px) {
+    .TitreProfilPage {
+        font-size: 16px; 
+        color: white;
+        margin-top: 2em; 
+        margin-left: 8em; 
+    }
 
-.InfosPersonnelles img {
-    width: 140px; /* Taille de l'image */
-    height: 140px; /* Taille de l'image */
-    border-radius: 50%; /* Arrondit l'image */
-    object-fit: cover; /* Ajuste la taille de l'image sans déformer */
-    margin-left: 14em; /* Espacement entre l'image et le texte */
-    margin-top: 2em;
+    .InfosPersonnelles {
+        border: 1px solid white;
+        border-radius: 15px;
+        height: auto; 
+        width: 90%; 
+        margin: 0 auto; 
+        overflow: hidden;
+    }
 
+    .InfosPersonnelles img {
+        width: 120px;
+        height: 150px; 
+        margin-left: 9em; 
+        margin-top: 1em; 
+    }
 
-}
+    .wrapper2 {
+        width: 90%; 
+        background: black;
+        color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-left: 2em; 
+        
+    }
 
-
-.wrapper2 {
-
-    width: 420px; /* Largeur du conteneur */
-    background: black;
-    color: white; /* Couleur du texte */
-    border-radius: 10px; /* Bordures arrondies */
-    padding: 30px 40px; 
-    margin: 20px 10px 10em 2.5em; /* Marges du conteneur */
-}
-
-/* Styles pour les différents éléments du formulaire */
-.wrapper2 h1 {
-    font-size: 20px; 
-    text-align: center; 
-}
-
-.wrapper2 .input-box{
-    position : relative;
-    width : 100%;
-    height : 50px;
-    background : black;
-    margin : 30px 0;
-
-}
-
-.input-box input {
-    width : 100%;
-    height : 100%;
-    background: transparent;
-    border : none;
-    outline : none;
-    border : 2px solid white;
-    border-radius : 40px;
-    font-size : 15px;
-    color : white;
-    padding-left : 15px;
-}
-
-.input-box i {
-    position : absolute;
-    right : 20px;
-    top : 50%;
-    transform : translateY(-50%);
-    font-size : 15px;
-}
-
-.wrapper2 .btn {   /* modifier la taille du bouton*/
-    width : 79%;
-    height : 50px;
-    background : #000000 ;
-    border : 1px solid  #EFCD1D;
-    outline : none;
-    border-radius : 40px;
-    box-shadow: 0 0 10px black;
-    cursor : pointer;
-    font-size : 15px;
-    color : rgb(255, 255, 255);
-    font-weight: 600;
-    margin-left : 3.5em;
-    margin-top : 1em;
-    transition: transform 0.5s ease-out;
-}
-
-.wrapper2  .btn:hover {
-    transform: scale(1.1); /* Appliquer l'effet de zoom au survol */
-    background-color: #EFCD1D;
-    color : black;
+    .wrapper2 .btn {
+        width: 100%; 
+        margin: 1em 0; 
+    }
+    .wrapper2 .btn {   
+        width : 59%;
+        height : 50px;
+        background : #000000 ;
+        border : 1px solid  #EFCD1D;
+        outline : none;
+        border-radius : 40px;
+        box-shadow: 0 0 10px black;
+        cursor : pointer;
+        font-size : 15px;
+        color : rgb(255, 255, 255);
+        font-weight: 600;
+        margin-left : 3em;
+        margin-top : em;
+        transition: transform 0.5s ease-out;
+    }
+    .wrapper2  .btn:hover {
+        transform: scale(1.1); 
+        background-color: #EFCD1D;
+        color : black;
+    }
+    
+    
+    .wrapper2 .register-link {
+        font-size : 15px;
+        text-align: center;
+        margin : 20px;
+    
+    }
+    
+    
+    .register-link p a:hover{
+        text-decoration : underline;
+    }
 }
 
 
-.wrapper2 .register-link {
-    font-size : 15px;
-    text-align: center;
-    margin : 20px;
-
-}
-
-
-.register-link p a:hover{
-    text-decoration : underline;
-}
-                                     
-                             
                                         /*****************************************************
                                                         * Fin code Avis&Critiques *
                                         *****************************************************/
