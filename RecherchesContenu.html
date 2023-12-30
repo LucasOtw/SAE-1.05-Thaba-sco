@@ -80,22 +80,6 @@
 <p id="contenu">
     Les series correspondantes
 </p>
-
-<script>
-    function chercherContenu() {
-        var a = document.getElementById("search").value.toLowerCase(); // Récupérer le mot-clé et convertir en minuscules
-        var contenu = document.getElementById("contenu");
-
-        if (a === "dark" || a === "Dark") {
-        contenu.innerHTML = '<div><figure><img src="images/principale_SaulGoodman.jpg" alt="better call saul" title="better call saul" width="250">  <!--imge de serie--></figure><section class="colonne"><h6>Better call Saul</h6><div class="ligne"><p>5.6</p><figure><img src="images/principale_etoile.png" alt="image dune étoile" title="image dune étoile" width="14" height="14"></figure><p>| Action</p><figure></div><img class="liste1" src="images/principale_listDajout.png" alt="list" title="list" width="50"> <!--image de rajout liste--></figure></section></div>';
-    } else {
-        contenu.innerHTML = "Aucun contenu correspondant n'a été trouvé.";
-    }
-
-        // Ajoutez d'autres conditions pour d'autres mots-clés et leur contenu associé ici
-    }
-</script>
-
     <footer>
         <div>
             <img src="images/LogoMenu.png" alt="Logo" width="100px" height="10%">
@@ -113,5 +97,6 @@
         </div>
         <a href="#HautDePage"><img src="images/FlècheHaute.png" alt="Haut de page" height="45" width="45"></a>
     </footer>
+    <script src="RecherchesContenu.js"></script>
 </body>
 </html>
