@@ -894,6 +894,49 @@ input[type="button"]:hover {
                                               *code Page Principal guenole*
                                         *****************************************************/
 
+                                        /*****************************************************
+                                                    *code pour les cookies*
+                                        *****************************************************/
+.cookies {
+    border : 1px solid #efcd1d;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: inset;
+    padding : 2em;
+    height: 130px;
+    width: 30em;
+    text-align: center;
+    float: right;
+    margin-top : 33em;
+    
+}                         
+
+
+
+.buttoncookies {
+    background-color: black;
+    border : 1px solid #efcd1d;
+    border-radius : 15px;
+    height: 37px;
+    width: 150px;
+    margin : 1em;
+    transition: background-color 0.3s ease, transform 0.5s ease, box-shadow 0.5s ease;
+    color: white;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.buttoncookies:hover {
+    background-color: #efcd1d;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Ombre pour effet d'élévation */
+    transform: translateY(-6px);
+
+    
+    
+
+}
+
 
 .affiche{
     background-image: url(images/principale_image\ de_fond_BB.jpeg);
