@@ -882,9 +882,335 @@ input[type="button"]:hover {
                                                            * Fin code Tom *
                                         *****************************************************/
 
+                                        /*****************************************************
+                                                           * Code liste saison  *
+                                        *****************************************************/
+                                   
+
+.serie1 {
+    display: flex;
+    align-items: center;
+    margin-left : 3em;
+    margin-top : 7em;
+    
+}
+
+
+.image1 {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.image1 img {
+    max-width: 400px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('images/playbutton.png'); 
+    width: 50px; 
+    height: 50px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+
+.image1:hover img {
+    transform: scale(1.05); 
+}
+
+.image1:hover .play-icon {
+    opacity: 1;
+}
+
+
+.infos1 {
+    flex: 1; 
+}
+
+
+.nbsaison1 {
+    margin-top: 1em;
+    font-size: 24px;
+}
+
+.nbepisodes1 {
+    margin: 5px 0;
+    font-size: 15px;
+    line-height: 1.5;  
+}
+
+.resumer1 {
+    text-align: justify;
+    width : 800px;
+}
+
+
+.serie2 {
+    display: flex;
+    align-items: center;
+    margin-left : 3em;
+    margin-top : 7em;
+    
+}
+
+
+.image2 {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.image2 img {
+    max-width: 400px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('images/playbutton.png'); 
+    width: 50px;
+    height: 50px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+
+.image2:hover img {
+    transform: scale(1.05);
+}
+
+.image2:hover .play-icon {
+    opacity: 1; 
+}
+
+
+.infos2 {
+    flex: 1; 
+}
+
+
+.nbsaison2 {
+    margin-top: 1em;
+    font-size: 24px;
+}
+
+.nbepisodes2 {
+    margin: 5px 0;
+    font-size: 15px;
+    line-height: 1.5;  
+}
+
+.resumer2 {
+    text-align: justify;
+    width : 800px;
+}
+
+
+.serie3 {
+    display: flex;
+    align-items: center;
+    margin-left : 3em;
+    margin-top : 7em;
+    
+}
+
+
+.image3 {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.image3 img {
+    max-width: 400px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('images/playbutton.png'); 
+    width: 50px; 
+    height: 50px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+
+.image3:hover img {
+    transform: scale(1.05); 
+}
+
+.image3:hover .play-icon {
+    opacity: 1; 
+}
+
+
+.infos3 {
+    flex: 1; 
+}
+
+
+.nbsaison3 {
+    margin-top: 1em;
+    font-size: 24px;
+}
+
+.nbepisodes3 {
+    margin: 5px 0;
+    font-size: 15px;
+    line-height: 1.5;  
+}
+
+.resumer3 {
+    text-align: justify;
+    width : 800px;
+}
+
+
+.serie4 {
+    display: flex;
+    align-items: center;
+    margin-left : 3em;
+    margin-top : 7em;
+    
+}
+
+
+.image4 {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.image4 img {
+    max-width: 400px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('images/playbutton.png'); 
+    width: 50px; 
+    height: 50px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+
+.image4:hover img {
+    transform: scale(1.05); 
+}
+
+.image4:hover .play-icon {
+    opacity: 1; 
+}
+
+
+.infos4 {
+    flex: 1; 
+}
+
+
+.nbsaison4 {
+    margin-top: 1em;
+    font-size: 24px;
+}
+
+.nbepisodes4 {
+    margin: 5px 0;
+    font-size: 15px;
+    line-height: 1.5;  
+}
+
+.resumer4 {
+    text-align: justify;
+    width : 800px;
+}
 
 
 
+.serie5 {
+    display: flex;
+    align-items: center;
+    margin-left : 3em;
+    margin-top : 7em;
+    
+}
+
+
+.image5 {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.image5 img {
+    max-width: 400px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('images/playbutton.png'); 
+    width: 50px; 
+    height: 50px;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+
+.image5:hover img {
+    transform: scale(1.05);
+}
+
+.image5:hover .play-icon {
+    opacity: 1; 
+}
+
+
+.infos5 {
+    flex: 1; 
+}
+
+
+.nbsaison5 {
+    margin-top: 1em;
+    font-size: 24px;
+}
+
+.nbepisodes5 {
+    margin: 5px 0;
+    font-size: 15px;
+    line-height: 1.5;  
+}
+
+.resumer5 {
+    text-align: justify;
+    width : 800px;
+}
                                         /*****************************************************
                                                 * Guénolé *
                                         *****************************************************/
