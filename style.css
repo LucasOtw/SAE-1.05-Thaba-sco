@@ -887,286 +887,37 @@ input[type="button"]:hover {
                                         *****************************************************/
                                    
 
-.serie1 {
-    display: flex;
-    align-items: center;
-    margin-left : 3em;
-    margin-top : 7em;
-    
-}
+/* Pour les desktops */
 
-
-.image1 {
-    position: relative;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.image1 img {
-    max-width: 400px; 
-    height: auto;
-    transition: transform 0.3s ease; 
-}
-
-.play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url('images/playbutton.png'); 
-    width: 50px; 
-    height: 50px;
-    opacity: 0; 
-    transition: opacity 0.3s ease; 
-}
-
-
-.image1:hover img {
-    transform: scale(1.05); 
-}
-
-.image1:hover .play-icon {
-    opacity: 1;
-}
-
-
-.infos1 {
-    flex: 1; 
-}
-
-
-.nbsaison1 {
-    margin-top: 1em;
-    font-size: 24px;
-}
-
-.nbepisodes1 {
-    margin: 5px 0;
-    font-size: 15px;
-    line-height: 1.5;  
-}
-
-.resumer1 {
-    text-align: justify;
-    width : 800px;
-}
-
-
-.serie2 {
-    display: flex;
-    align-items: center;
-    margin-left : 3em;
-    margin-top : 7em;
-    
-}
-
-
-.image2 {
-    position: relative;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.image2 img {
-    max-width: 400px; 
-    height: auto;
-    transition: transform 0.3s ease; 
-}
-
-.play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url('images/playbutton.png'); 
-    width: 50px;
-    height: 50px;
-    opacity: 0; 
-    transition: opacity 0.3s ease; 
-}
-
-
-.image2:hover img {
-    transform: scale(1.05);
-}
-
-.image2:hover .play-icon {
-    opacity: 1; 
-}
-
-
-.infos2 {
-    flex: 1; 
-}
-
-
-.nbsaison2 {
-    margin-top: 1em;
-    font-size: 24px;
-}
-
-.nbepisodes2 {
-    margin: 5px 0;
-    font-size: 15px;
-    line-height: 1.5;  
-}
-
-.resumer2 {
-    text-align: justify;
-    width : 800px;
-}
-
-
-.serie3 {
-    display: flex;
-    align-items: center;
-    margin-left : 3em;
-    margin-top : 7em;
-    
-}
-
-
-.image3 {
-    position: relative;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.image3 img {
-    max-width: 400px; 
-    height: auto;
-    transition: transform 0.3s ease; 
-}
-
-.play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url('images/playbutton.png'); 
-    width: 50px; 
-    height: 50px;
-    opacity: 0; 
-    transition: opacity 0.3s ease; 
-}
-
-
-.image3:hover img {
-    transform: scale(1.05); 
-}
-
-.image3:hover .play-icon {
-    opacity: 1; 
-}
-
-
-.infos3 {
-    flex: 1; 
-}
-
-
-.nbsaison3 {
-    margin-top: 1em;
-    font-size: 24px;
-}
-
-.nbepisodes3 {
-    margin: 5px 0;
-    font-size: 15px;
-    line-height: 1.5;  
-}
-
-.resumer3 {
-    text-align: justify;
-    width : 800px;
-}
-
-
-.serie4 {
-    display: flex;
-    align-items: center;
-    margin-left : 3em;
-    margin-top : 7em;
-    
-}
-
-
-.image4 {
-    position: relative;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.image4 img {
-    max-width: 400px; 
-    height: auto;
-    transition: transform 0.3s ease; 
-}
-
-.play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url('images/playbutton.png'); 
-    width: 50px; 
-    height: 50px;
-    opacity: 0; 
-    transition: opacity 0.3s ease; 
-}
-
-
-.image4:hover img {
-    transform: scale(1.05); 
-}
-
-.image4:hover .play-icon {
-    opacity: 1; 
-}
-
-
-.infos4 {
-    flex: 1; 
-}
-
-
-.nbsaison4 {
-    margin-top: 1em;
-    font-size: 24px;
-}
-
-.nbepisodes4 {
-    margin: 5px 0;
-    font-size: 15px;
-    line-height: 1.5;  
-}
-
-.resumer4 {
-    text-align: justify;
-    width : 800px;
-}
-
-
-
+.serie1,
+.serie2,
+.serie3,
+.serie4,
 .serie5 {
     display: flex;
     align-items: center;
-    margin-left : 3em;
-    margin-top : 7em;
-    
+    margin-left: 3em;
+    margin-top: 7em;
 }
 
-
+.image1,
+.image2,
+.image3,
+.image4,
 .image5 {
     position: relative;
     display: inline-block;
     margin-right: 20px;
 }
 
+.image1 img,
+.image2 img,
+.image3 img,
+.image4 img,
 .image5 img {
-    max-width: 400px; 
+    max-width: 400px;
     height: auto;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .play-icon {
@@ -1174,43 +925,109 @@ input[type="button"]:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url('images/playbutton.png'); 
-    width: 50px; 
+    background-image: url('images/playbutton.png');
+    width: 50px;
     height: 50px;
-    opacity: 0; 
-    transition: opacity 0.3s ease; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-
+.image1:hover img,
+.image2:hover img,
+.image3:hover img,
+.image4:hover img,
 .image5:hover img {
     transform: scale(1.05);
 }
 
+.image1:hover .play-icon,
+.image2:hover .play-icon,
+.image3:hover .play-icon,
+.image4:hover .play-icon,
 .image5:hover .play-icon {
-    opacity: 1; 
+    opacity: 1;
 }
 
-
+.infos1,
+.infos2,
+.infos3,
+.infos4,
 .infos5 {
-    flex: 1; 
+    flex: 1;
 }
 
-
+.nbsaison1,
+.nbsaison2,
+.nbsaison3,
+.nbsaison4,
 .nbsaison5 {
     margin-top: 1em;
     font-size: 24px;
 }
 
+.nbepisodes1,
+.nbepisodes2,
+.nbepisodes3,
+.nbepisodes4,
 .nbepisodes5 {
     margin: 5px 0;
     font-size: 15px;
-    line-height: 1.5;  
+    line-height: 1.5;
 }
 
+.resumer1,
+.resumer2,
+.resumer3,
+.resumer4,
 .resumer5 {
     text-align: justify;
-    width : 800px;
+    width: 800px;
 }
+
+/* Pour les smartphones */
+
+@media screen and (max-width: 768px) {
+    .serie1,
+    .serie2,
+    .serie3,
+    .serie4,
+    .serie5 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 1em;
+        margin-top: 3em;
+    }
+
+    .image1,
+    .image2,
+    .image3,
+    .image4,
+    .image5 {
+        margin-right: 0;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .infos1,
+    .infos2,
+    .infos3,
+    .infos4,
+    .infos5 {
+        order: 3; 
+        width: 100%;
+    }
+
+    .resumer1,
+    .resumer2,
+    .resumer3,
+    .resumer4,
+    .resumer5 {
+        width: 100%;
+        max-width: none;
+        margin-right: 1em;
+    }
+}
+
                                         /*****************************************************
                                                 * Guénolé *
                                         *****************************************************/
