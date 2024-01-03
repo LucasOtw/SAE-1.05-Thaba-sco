@@ -1,14 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const overlay = document.getElementById('overlay');
-    if (!getCookie('acceptedCookies')) {
-      overlay.style.visibility = 'visible';
-      overlay.style.opacity = '1';
-    }
-  });
-  
-  function acceptCookies() {
-    const overlay = document.getElementById('overlay');
-    overlay.style.visibility = 'hidden';
-    overlay.style.opacity = '0';
-    setCookie('acceptedCookies', 'true', 30);
-  }
+const elementacacher = document.getElementById('elementacacher');
+const buttoncookies = document.getElementById('buttoncookies');
+
+//Ajout de l'écouteur d'évènement
+buttoncookies.addEventListener('click', function(){
+  //Modification du style de l'élément pour le cacher
+  elementacacher.style.display = 'none';
+});
