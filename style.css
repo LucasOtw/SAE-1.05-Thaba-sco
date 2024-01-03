@@ -1075,19 +1075,16 @@ input[type="button"]:hover {
                                               *code Page Principal guenole*
                                         *****************************************************/
 
-                                        
-
-.affiche{
+.principale-affiche{
     background-image: url(images/principale_image\ de_fond_BB.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
     padding: 3em; 
-    
 }
 
-.flex1{
+.principale-flex1{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1095,10 +1092,10 @@ input[type="button"]:hover {
     align-items: center; 
     margin-top: 40%;
     margin-left: -13em;
-    
+    font-size: 1vw;
 }
 
-.voir_saison{
+.principale-voir_saison{
     background-color:#efcd1d;
     width: 138px;
     height:  40px; 
@@ -1109,84 +1106,91 @@ input[type="button"]:hover {
     align-items: center;
     justify-content: center;
     margin-right: 10px; 
-
 }
 
-.BO-mots_clée{
+.principale-BO-mots_clée{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    font-size: 1vw;
 }
 
 div>h4{
     margin-left: 1em; 
 }
 
-.BandeAnnonce{
+.principale-BandeAnnonce{
     display: flex;
     flex-direction: row;
+    font-size: 1vw;
 }
 
-.avisBO{
+.principale-avisBO{
     display: flex;
     flex-direction: column;
     align-items:flex-start;
 }
-.avisBO figure{
+
+.principale-avisBO figure{
     margin: 14px;
 }
-.flex-container{
+
+.principale-flex-container{
     margin-top: 3em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.flex-container,.voir{
+
+.principale-flex-container, .principale-voir{
     margin-left: 10px;
-    
 }
 
-
-.voir:visited{
+.principale-voir:visited{
     color: #efcd1d;
 }
-.voir:hover{
+
+.principale-voir:hover{
     color: #0000ff;
 }
 
-.espacePourRien{
+.principale-espacePourRien{
     margin-left: 8px;
 }
 
-.motsClée{
+.principale-motsClée{
     margin-top: 6em;
     display: flex;
     flex-direction: column;
-
 }
 
-.titre{
+.principale-titre{
     color: #efcd1d;
+    font-size: 1vw;
 }
-.resumer{
+
+.principale-resumer{
     display: flex;
     flex-direction:column ;
     justify-content: flex-end;
     align-items: center;
+    flex-shrink: 2;
     padding: 0.5em;
-    margin-top: 1em;
+    margin-top: -6em;
     border: 1px inset #efcd1d;
     border-radius: 2em;
-    margin-left: 10%;
-
+    max-width: 50%;
+    margin-right: 3em;
+    margin-left: 50%;
+    font-size: 1vw;
 }
 
-.text{
+.principale-text{
     margin-left: 10px;
 }
 
-.motsClée li{
+.principale-motsClée li{
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -1195,7 +1199,7 @@ div>h4{
     align-items: center;
 }
 
-.motsClée a{
+.principale-motsClée a{
     background-color: #efcd1d;
     width: 180px;
     height: 45px;
@@ -1207,58 +1211,56 @@ div>h4{
     margin-bottom: 15px;
 }
 
-.motsClée a:hover, .voir_saison:hover{
+.principale-motsClée a:hover, .principale-voir_saison:hover{
     background-color: black;
     color: #efcd1d;
     border: 2px inset ;
     border-radius: #efcdef;
 }
 
-.motsClée p{
+.principale-motsClée p{
     text-align: center;
     margin-top: 1px;
 }
 
-.ligneAR{
+.principale-colonneARP{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
+.principale-ligneARP{
+    display: flex;
+    flex-direction: row;
+}
 
-
-.acteur1{
+.principale-acteur1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 0em;
-    max-width: 45%;
+    max-width: 50%;
 }
 
-.acteur1 em {
+.principale-acteur1 em {
     text-shadow: 0 0 10px #fff,
                  0 0 10px #efcd1d,
                  0 0 10px #efcd1d;
-    
+    font-size: 1vw;
 }
 
-.acteur1 img{
+.principale-acteur1 img{
     border-radius: 150px;
     box-shadow: 13px -9px 15px -4px #efcd1d ;
     transition: tranform .3s linear;
     object-fit: cover ;
     background-color: black;
-
 }
 
-.acteur1 img:hover{
-    box-shadow: 13px -9px 15px -4px #efcd1d ;
+.principale-acteur1 img:hover{
+    box-shadow: 13px -9px 15px -4px #ececec ;
     transform: scale(1.2);
-
-
 }
 
-.prix{
+.principale-prix{
     border: 1px inset #efcd1d;
     border-radius: 2em;
     display: flex;
@@ -1266,42 +1268,124 @@ div>h4{
     justify-content: flex-end;
     align-items: center;
     width: 50% ;
-    margin-left: 50%;
-    margin-top: -13em;
+    height: 10%;
+    margin-left: 4em;
+    margin-right: 3em;
+    font-size: 1vw;
 }
 
-
-.espace{
-    margin-top: 8em;
+.principale-espace{
+    margin-top: 2em;
     margin-left: 1em;
 }
-.pourvous{
+
+.principale-pourvous{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
-   
-
 }
 
-.colonne{
+.principale-colonne{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
 }
 
-.ligne{
+.principale-ligne , .principale-ligne div{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
+.principale-ligne div{
+    margin-top: -1.5em;
+}
 
-.pourvous img{
+.principale-colonne figure{
+    margin-left: 0;
+}
+
+.principale-retire_espace{
+    margin-left: -2em;
+}
+
+.principale-pourvous section > figure img{
     border-radius: 15px;
 }
+
+@media screen and (max-width: 768px){
+    .principale-BO-mots_clée video{
+        width: 390px;
+        height: 299px;
+        margin-left: 1em;
+        margin-top: -6em;
+    }
+    .principale-BO-mots_clée{
+        margin-top: 2em;
+    }
+    .principale-avisBO, .principale-motsClée{
+        margin-top: 5em;
+    }
+    
+    .principale-disparition, #principale-disparition{
+        display: none;
+    }
+    .principale-motsClée{
+        margin-top: 20em;
+        margin-left: -10em;
+        margin-right: 10em;
+    }
+    .principale-motsClée a{
+        width: 70px;
+        height: 23px; 
+        font-size: 10px;
+    }
+    .principale-resumer{
+        margin-top: 1em;
+        max-width: 90%;
+        margin-right: 3em;
+        margin-left: 3em;
+        font-size: 15px;
+    }
+    .principale-resumer .principale-titre, .principale-BandeAnnonce h4, .principale-titre{
+        font-size: 20px;
+    }
+    .principale-ligneARP{
+        flex-direction: column;
+    }
+    .principale-acteur1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        max-width: 90%;
+        font-size: 10px;
+    }
+    .principale-acteur1 img{
+        width: 45px;
+        height: auto;
+    }
+    .principale-prix{
+        margin-top: 1em;
+        max-width: 90%;
+        margin-right: 3em;
+        margin-left: 3em;
+        font-size: 15px;  
+        width: 650px;
+        height: 150px;
+        flex-shrink: 0;  
+    }
+    .principale-ligne > figure > img{
+        width: 121px;
+        height: auto;
+    }
+    .principale-footer{
+        margin-top: 35%;
+    }
+
+}
+                                      
 
 
                                         /*****************************************************
