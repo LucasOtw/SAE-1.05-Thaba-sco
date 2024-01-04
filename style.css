@@ -438,7 +438,7 @@ footer>div{
 }
 
                                         /*****************************************************
-                                                * Code Page Profil  Lucas *
+                                                  * Code Page Compte utilisateur *
                                         *****************************************************/
 
 
@@ -510,7 +510,15 @@ footer>div{
     
     .register-link p a:hover{
         text-decoration : underline;
+
     }
+
+    .InfosPersonnelles > section > h2 {
+        text-align: center;
+        margin-top: 2em;
+        font-size : 15px;
+                     
+    }  
 }
 
 /* Styles pour les smartphones */
@@ -586,6 +594,12 @@ footer>div{
     .register-link p a:hover{
         text-decoration : underline;
     }
+    .InfosPersonnelles > section > h2 {
+        text-align: center;
+        margin-top: 2em;
+        font-size : 15px;
+                     
+    }  
 }
 
 
@@ -595,7 +609,7 @@ footer>div{
 
 
                                         /*****************************************************
-                                                     * Code A propos Lucas *
+                                                           * Code A propos  *
                                         *****************************************************/
 /* Styles pour les ordinateurs de bureau */
 .container {
@@ -641,7 +655,7 @@ footer>div{
 
 .first-letter,
 .first-letter2 {
-    font-size: 2em;
+    font-size: 15px;
     font-weight: bold;
     color: white;
 }
@@ -670,7 +684,7 @@ footer>div{
 
     .first-letter,
     .first-letter2 {
-        font-size: 1.5em; 
+        font-size: 20px; 
     }
 
     .wrapper h1 {
@@ -681,7 +695,7 @@ footer>div{
 
                    
                                         /*****************************************************
-                                                     * Code Recherche Lucas *
+                                                        * Code Recherche *
                                         *****************************************************/
 .RechercheBar {
     display: flex;
@@ -771,34 +785,14 @@ input[type="button"]:hover {
 #contenu {
     margin-left : 3em;
     margin-top : 5em;
+
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                      
                                         /*****************************************************
-                                                      * Code  Saison 1 Tom *  
+                                                      * Code  Saison 1 *  
                                         *****************************************************/
 
 
@@ -886,7 +880,7 @@ input[type="button"]:hover {
 }
 
                                         /*****************************************************
-                                                           * Fin code Tom *
+                                                           * Fin code saison 1 *
                                         *****************************************************/
 
                                         /*****************************************************
@@ -1035,12 +1029,9 @@ input[type="button"]:hover {
     }
 }
 
-                                        /*****************************************************
-                                                * Guénolé *
-                                        *****************************************************/
 
                                         /*****************************************************
-                                                    *code pour les cookies*
+                                                    *Code pour les cookies*
                                         *****************************************************/
 #elementacacher {
     border : 1px solid #efcd1d;
@@ -1080,7 +1071,7 @@ input[type="button"]:hover {
 }
                                         
                                         /*****************************************************
-                                              *code Page Principal guenole*
+                                                      *code Page Principal*
                                         *****************************************************/
 
 .principale-affiche{
@@ -1413,11 +1404,11 @@ div>h4{
 
 
                                         /*****************************************************
-                                              *Fin code Page Principal guenole*
+                                                     *Fin code Page Principal*
                                         *****************************************************/
 
                                         /*****************************************************
-                                                * Code pour Backstage Benjamin *
+                                                       * Code pour Backstage *
                                         *****************************************************/
 .BackstageBody * img{
     border-radius: 15px;
@@ -1580,5 +1571,5 @@ div>h4{
 
 
                                         /*****************************************************
-                                                * Fin code pour Backstage Benjamin *
+                                                    * Fin code pour Backstage *
                                         *****************************************************/

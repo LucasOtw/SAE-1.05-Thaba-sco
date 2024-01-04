@@ -9,27 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b47688b437.js" crossorigin="anonymous"></script>  
-    <title>Les avis & critiques</title>
+    <title>Votre compte</title>
 </head>
 <body>
     <header>
         <nav class="navHeader" id="HautDePage">
             <img src="images/LogoMenu.png" alt="Logo tabas'koh" height="45" width="100">
-
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="Backstages.html">Découvrir</a></li>
                 <li><a href="Avis&Critiques.html">Avis</a></li>
                 <li><a href="APropos.html" target="_blank">A propos</a></li>
             </ul>
-
             <div class="LogoNavBarGauche">
-                <a href="RecherchesContenu.html">
-                    <img src="images/icones/icone_recherche.png" alt="Logo recherche" height="30" width="30">
-                </a>
-                <a href="CompteUtilisateur.html">
-                    <img src="images/icones/iconeCompte.png" alt="Logo compte" height="30" width="30">
-                </a>
+                <a href="RecherchesContenu.html"><img src="images/icones/icone_recherche.png" alt="Logo recherche" height="30" width="30"></a>
+                <a href="CompteUtilisateur.html"><img src="images/icones/iconeCompte.png" alt="Logo compte" height="30" width="30"></a>
             </div>
         </nav>
         <nav class="PetitNavHeader">
@@ -41,70 +35,35 @@
             </ul>
         </nav>
     </header>
-
-    <div class="wrapper">
-        <form action="traitement_formulaire.php" method="post"><!--Pour eviter des erreurs, fichier fictif-->
-            <h1>Publier un avis</h1>
-            <div class="input-box">
-                <input type="text" placeholder="Nom d'utilisateur" required>
-            </div>
-            <div class="input-box">
-                <input type="text" placeholder="Nom du film" required>
-            </div>
-            <div class="input-box">
-                <input type="text" placeholder="Votre avis" required>
-            </div>
-            <button type="submit" class="btn">Publier</button>
-        </form>
-        <div class="register-link">
+    <main>
+        <div class="TitreProfilPage">
+            <p>
+                Vos informations personnelles
+            </p>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="vertical-bar"></div>
-        <div class="horizontale-bar"></div>
-        <section class="titrePage">
-            <h2>Les avis</h2>
-        </section>
-        <section class="titreavis">
-            <h2>Les avis des utilisateurs</h2>
-        </section>
-    </div>
-    
-    <div class="afficherAvis1">
-        <section>
+        <div class="InfosPersonnelles">
             <img src="images/User2.jpeg" alt="Photo de profil 1">
-            <h2>Tim Cook</h2>
-            <p>Oppenheimer</p>
-            <p>Bon film malgré des effets spéciaux...</p>
-            <p>Note : 4.3/5</p>
-        </section>
-    </div>
-
-    <div class="afficherAvis2">
-        <section>
-            <img src="images/User1.jpg" alt="Photo de profil 1">
-            <h2>Lisa Jackson</h2>
-            <p>Oppenheimer</p>
-            <p>Film un peu rapide</p>
-            <p>Note : 5/5</p>
-        </section>
-    </div>
-
-    <div class="afficherAvis3">
-        <section>
-            <img src="images/User3.png" alt="Photo de profil 1">
-            <h2>RottenTomatoes</h2>
-            <p>Oppenheimer</p>
-            <p>Un film utopique</p>
-            <p>Note : 3/5</p>
-        </section>
-    </div>
-
-    <footer class="footer2avis">
+            <section>
+                <div class="wrapper2">
+                    <form action="">
+                        <div class="input-box">
+                            <input type="text" placeholder="Nom d'utilisateur" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="date" placeholder="DD/MM/YYYY" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" placeholder="Adresse mail" required>
+                        </div>
+                        <button type="submit" class="btn">Editer les infos personnelles</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
         <div>
-            <img src="images/LogoMenu.png" alt="Logo" width="100" height="45">
-
+            <img src="images/LogoMenu.png" alt="Logo" width="100" height="50">
             <p>©Tabas'KHO</p>
         </div>
         <div class="reseauxSociaux">
