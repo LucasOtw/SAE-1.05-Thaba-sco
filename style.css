@@ -383,7 +383,7 @@ footer>div{
         top : 27em;
     }
 
-    footer {
+    footer {    /* change le non lucas*/
         top : 90em;
     }
 
@@ -1086,9 +1086,9 @@ input[type="button"]:hover {
 .principale-affiche{
     background-image: url(images/principale_image\ de_fond_BB.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
+    background-size: contain;
+    width: 105%;
+    height: auto;
     padding: 3em; 
 }
 
@@ -1402,7 +1402,10 @@ div>h4{
         height: auto;
     }
     .principale-footer{
-        margin-top: 35%;
+        bottom: -2%;
+    }
+    .principale-flex1{
+        font-size: 10px;
     }
 
 }
