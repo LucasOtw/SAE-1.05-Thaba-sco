@@ -1406,6 +1406,28 @@ div>h4{
                                         /*****************************************************
                                                      *Fin code Page Principal*
                                         *****************************************************/
+                                        /*****************************************************
+                                                     *Code Page des mots clés *
+                                        *****************************************************/
+.Page-motsClee p{
+    color: #000;
+    font-size: 48px;
+    text-align: center;
+}
+.Page-motsClee{
+    background-color: #efcd1d;
+    border-radius: 20px;
+    background: #EFCD1D;
+    display: flex;
+    flex-direction: column;
+    margin: 10% ;
+    height: 50%;
+
+}
+                                        /*****************************************************
+                                                     *Fin code Page des mots clés*
+                                        *****************************************************/
+
 
                                         /*****************************************************
                                                        * Code pour Backstage *
