@@ -705,7 +705,15 @@ footer>div{
     align-items: center; /* Alignement vertical des éléments */
     gap: 10px; /* Espace entre les éléments horizontaux */
 }
-                                        
+       
+.RechercheBar > figure > img {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.RechercheBar > figure > img:hover {
+    transform: scale(1.10);
+}
 .RechercheBar img {
     border-radius: 15px;
     margin-right: 3px; /* Ajout de marges entre les images */
@@ -1147,12 +1155,16 @@ div>h4{
     margin-left: 10px;
 }
 
+.principale-voir {
+    transition: transform 0.3s ease;
+}
 .principale-voir:visited{
     color: #efcd1d;
 }
 
 .principale-voir:hover{
     color: #0000ff;
+    transform: scale(1.10);
 }
 
 .principale-espacePourRien{
@@ -1163,7 +1175,10 @@ div>h4{
     margin-top: 6em;
     display: flex;
     flex-direction: column;
+    color : blue;
 }
+  
+
 
 .principale-titre{
     color: #efcd1d;
@@ -1250,14 +1265,14 @@ div>h4{
 .principale-acteur1 img{
     border-radius: 150px;
     box-shadow: 13px -9px 15px -4px #efcd1d ;
-    transition: tranform .3s linear;
+    transition: transform 0.3s ease;
     object-fit: cover ;
     background-color: black;
 }
 
 .principale-acteur1 img:hover{
     box-shadow: 13px -9px 15px -4px #ececec ;
-    transform: scale(1.2);
+    transform: scale(1.10);
 }
 
 .principale-prix{
@@ -1313,6 +1328,11 @@ div>h4{
 
 .principale-pourvous section > figure img{
     border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.principale-pourvous section > figure img:hover {
+    transform: scale(1.10);
 }
 
 @media screen and (max-width: 768px){
@@ -1321,6 +1341,7 @@ div>h4{
         height: 299px;
         margin-left: 1em;
         margin-top: -6em;
+        
     }
     .principale-BO-mots_clée{
         margin-top: 2em;
@@ -1463,6 +1484,31 @@ div>h4{
         margin-left: 4%;
         margin-top: 13%;
     }
+    .acteur > img {
+        transition: transform 0.3s ease;
+        height: 7em;
+        width: 7em;
+    }
+    .acteur > img:hover {
+        transform: scale(1.10);
+    }
+    img[src="images/BackstagePrincipale.png"] {
+        transition: transform 0.3s ease;
+    }
+
+    img[src="images/BackstagePrincipale.png"]:hover {
+        transform: scale(1.10);
+    }
+    .aCote > .miniature > img {
+        transition: transform 0.3s ease;
+        height: 10em;
+        width: 20em;
+    }
+    .aCote > .miniature > img:hover {
+        transform: scale(1.10);
+    }
+
+
 }
 @media screen and (max-width: 768px){
     .BackstageBody{
