@@ -169,7 +169,9 @@ footer>div{
         padding: 30px 20px;
         margin: 6em 8em 2em auto; /* Ajustez la marge pour centrer verticalement */
         position : relative;
+        
     }
+
         
     /* Styles pour les différents éléments du formulaire */
     .wrapper h1 {
@@ -267,6 +269,8 @@ footer>div{
         overflow: hidden;
         color : black;
     }
+
+
     
     .afficherAvis1 img {
         width: 70px; /* Taille de l'image */
@@ -275,6 +279,12 @@ footer>div{
         object-fit: cover; /* Ajuste la taille de l'image sans déformer */
         margin-right: 20px; /* Espacement entre l'image et le texte */
         float: left; /* Place l'image à gauche du texte */
+        transition: opacity 0.7s ease;
+
+    }
+
+    .afficherAvis1 img:hover{
+        transform: scale(1.10);
     }
     
     .afficherAvis2 {
@@ -292,6 +302,7 @@ footer>div{
         border-radius: 14px;
         overflow: hidden;
         color : black;
+
     
     }
     
@@ -302,6 +313,12 @@ footer>div{
         object-fit: cover; /* Ajuste la taille de l'image sans déformer */
         margin-right: 20px; /* Espacement entre l'image et le texte */
         float: left; /* Place l'image à gauche du texte */
+        transition: opacity 0.3s ease;
+
+    }
+
+    .afficherAvis2 img:hover{
+        transform: scale(1.10);
     }
     
     
@@ -320,6 +337,7 @@ footer>div{
         border-radius: 14px;
         overflow: hidden;
         color : black;
+
         
     }
     
@@ -330,6 +348,13 @@ footer>div{
         object-fit: cover; /* Ajuste la taille de l'image sans déformer */
         margin-right: 20px; /* Espacement entre l'image et le texte */
         float: left; /* Place l'image à gauche du texte */
+        transition: opacity 0.3s ease;
+
+    }
+
+    .afficherAvis3 img:hover{
+            transform: scale(1.10);
+
     }
     
     .titreavis {
