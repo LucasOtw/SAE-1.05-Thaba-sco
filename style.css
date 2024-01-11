@@ -367,7 +367,6 @@ footer>div{
     }
 .bonjour {
     left : 10em;
-    foalt : em;
     
 }
     .titrePage {
@@ -1370,22 +1369,19 @@ div>h4{
     transform: scale(1.10);
 }
 
-@media screen and (max-width: 767px) {
-    
-    .principale-BO-mots_clée video {
-        width: 100%; /* Utilise 100% de la largeur du conteneur parent */
-        max-width: 390px; /* Limite la largeur maximale à 390 pixels */
-        height: auto; /* Permet à la hauteur de s'ajuster automatiquement en fonction de la largeur */
-        max-height: 299px; /* Limite la hauteur maximale à 299 pixels */
+@media screen and (max-width: 768px) {
+    .principale-BO-mots_clée video{
+        width: 390px;
+        height: 299px;
         margin-left: 1em;
         margin-top: -6em;
+        
     }
-    
     .principale-BO-mots_clée{
         margin-top: 2em;
     }
     .principale-avisBO, .principale-motsClée{
-        margin-top: 10%;
+        margin-top: 5em;
     }
     
     .principale-disparition, #principale-disparition{
@@ -1417,7 +1413,7 @@ div>h4{
     .principale-acteur1{
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         max-width: 90%;
         font-size: 10px;
     }
