@@ -2,7 +2,7 @@ function chercherContenu() {
     var a = document.getElementById("search").value.toLowerCase(); // Récupérer le mot-clé et convertir en minuscules
     var contenu = document.getElementById("contenu");
 
-    if (a === "dark" || a === "Dark") {
+    if (a === "dark" || a === "Dark") { //Ameliorer la recherche pour que ça soit plus large
         contenu.innerHTML = `
         <article class="RechercheBar">
 					<figure>
