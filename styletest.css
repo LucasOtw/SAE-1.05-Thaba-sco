@@ -1,0 +1,399 @@
+
+body {
+    font-family: 'Josefin Sans', sans-serif; /* Police pour le texte */
+    font-family: 'Lato', sans-serif; /* Une autre option de police */
+    min-height: 100vh; /* Hauteur minimale de la vue */
+    background: black; /* Couleur de fond de la page */
+    margin: 0; /* Suppression des marges par défaut */
+    position: relative; /* Position relative pour les éléments absolus */
+    height: 100%; /* Hauteur de la page */
+    color: #fff;
+    padding-bottom : 100px;
+}
+
+/* Styles pour différents niveaux de titres */
+h1 {
+    font-size: 30px; 
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 15px; 
+}
+
+/* Style pour la barre de navigation */
+@media screen and (min-width: 768px){
+    .PetitNavHeader{
+        display: none;
+    }
+    .navHeader{
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        flex-grow: 3;
+        margin-top: 0.5em;
+        margin-left: 1.5em;
+    }
+    .navHeader>ul>li>a{
+        text-decoration: none;
+        color: white;
+    }
+    .LogoNavBarGauche{
+        display: flex;
+        align-items: center;
+    }
+    .LogoNavBarGauche>a{
+        margin-right: 1.5em;
+    }
+    .navHeader>ul{
+        flex-grow: 0.5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: top;
+    }
+
+    .navHeader>div>img{
+        margin-right: 1.5em;
+    }
+
+    .navHeader ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+    
+    .navHeader ul li {
+        margin-right: 20px;
+        position: relative;
+    }
+
+    footer>div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer>div>p{
+        display:block;
+        color: #EFCD1D ;
+    }
+    
+    /* Effet de soulignement au survol des liens */
+    nav ul li a::before {
+        content: ""; /* Contenu vide pour l'effet de soulignement */
+        position: absolute; /* Positionnement absolu */
+        width: 0; /* Largeur initiale de la ligne de soulignement */
+        height: 2.5px; /* Hauteur de la ligne de soulignement */
+        bottom: -4px; /* Positionnement sous le texte */
+        background-color: white; /* Couleur du soulignement */
+        transition: width 0.3s ease; /* Transition fluide */
+    }
+
+    nav ul li a:hover::before {
+        width: 100%; /* Élargissement du soulignement au survol */
+}
+}
+@media screen and (max-width: 768px){
+    .PetitNavHeader{
+        display: flex;
+        background-color: #EFCD1D;
+        position: fixed;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        border-radius: 50px;
+    }
+    .PetitNavHeader>ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        flex-grow: 3;
+        margin: 10px;
+        padding: 0;
+    }
+    .PetitNavHeader>ul>li{
+        display: flex;
+        align-items: center;
+    }
+    .navHeader{
+        display:none;
+    }
+    footer>div>p{
+        display: none;
+    }
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom : 0;
+    width: 100%;
+    height: 0em;
+    align-items: center;
+}
+
+footer>div{
+    align-self: center;
+}
+
+/* Styles de base pour la classe .wrapper */
+.wrapper {
+    width: 100%;
+    max-width: 420px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    padding: 30px 20px;
+    margin: 6em 8em 2em auto; /* Ajustez la marge pour centrer verticalement */
+    position: relative;
+}
+
+/* Styles pour les écrans de taille moyenne (par exemple, tablettes) */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        margin: 2em auto; /* Ajustez la marge pour centrer verticalement sur des écrans plus petits */
+    }
+    .afficherAvis1,
+    .afficherAvis2,
+    .afficherAvis3 {
+        width: 100%;
+        max-width: 480px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Styles pour les petits écrans (par exemple, smartphones) */
+@media screen and (max-width: 420px) {
+    .wrapper {
+        padding: 20px 10px; /* Ajustez le rembourrage pour les écrans plus petits */
+    }
+
+    .wrapper h1 {
+        font-size: 18px; /* Ajustez la taille de la police pour les écrans plus petits */
+    }
+
+    .wrapper .TitreResponsive {
+        display: block; /* Affichez l'élément TitreResponsive sur les écrans plus petits */
+    }
+
+    .wrapper .wrapper h1 {
+        display: none; /* Masquez l'élément h1 sur les écrans plus petits */
+    }
+    .afficherAvis1,
+    .afficherAvis2,
+    .afficherAvis3 {
+        width: 100%;
+        max-width: 100%;
+        margin: 2em auto; /* Ajustez la marge pour centrer verticalement sur des écrans plus petits */
+        left: auto;
+        transform: none;
+    }
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: black;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 40px;
+    font-size: 15px;
+    color: white;
+    padding-left: 15px;
+    outline: none;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+}
+
+.wrapper .btn {
+    width: 79%;
+    height: 50px;
+    background: #000000;
+    border: 1px solid #EFCD1D;
+    outline: none;
+    border-radius: 70px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-left: 3.5em;
+    margin-top: 1em;
+    transition: transform 0.5s ease-out;
+}
+
+.wrapper .btn:hover {
+    transform: scale(1.1);
+    background-color: #EFCD1D;
+    color: black;
+}
+
+.wrapper .register-link {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.vertical-bar {
+    width: 3px;
+    height: 75vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 48.5em;
+    top: 14em;
+}
+
+.afficherAvis1,
+.afficherAvis2,
+.afficherAvis3 {
+    border: 1px solid #C32525;
+    background-color: #C32525;
+    height: 135px;
+    width: 480px;
+    padding: 1em;
+    margin-left: 1em;
+    margin-top: 2em;
+    position: absolute;
+    left: 17%;
+    transform: translateX(-50%);
+    border-radius: 14px;
+    overflow: hidden;
+    color: black;
+    display: flex;
+}
+
+.titreavis {
+    color: white;
+    font-size: 20px;
+    margin : 1em;
+    position: absolute;
+    top: 8.5em;
+    left: 0%; /* Vous pouvez ajuster la valeur left pour centrer l'élément si nécessaire */
+}
+.bonjour {
+left : 10em;
+
+}
+.titrePage {
+    display: none;
+}
+
+
+@media screen and (max-width: 767px) {
+.wrapper {
+    padding: 30px 40px;
+    top: 47em; 
+    background-color: transparent;
+}
+
+.wrapper h1 {
+    text-align: center; /* Ajout de la règle de centrage */
+    margin-top: 0; /* Réinitialisation de la marge si nécessaire */
+}
+
+
+
+/* Styles pour les appareils mobiles */
+.afficherAvis1,
+.afficherAvis2,
+.afficherAvis3 {
+    width: 70%; 
+    left: 7%; 
+    transform: translateX(0); 
+    margin-left : 1em;
+}
+
+.afficherAvis1 {
+    top : 3em;
+}
+
+.afficherAvis2 {
+    top : 15em;
+}
+
+.afficherAvis3 {
+    top : 27em;
+}
+
+.footer2avis {    /* change le nom lucas*/
+    top : 90em;
+}
+
+.vertical-bar {
+    display : none;
+}
+
+.input-box {
+    width : 80%;
+    background-color: transparent;
+}
+
+.wrapper .btn {
+   width: 250px;
+   background-color: transparent;
+}
+
+.titreavis {
+    position: absolute;
+    top: 0; /* Aligner en haut de la page */
+    left: 45%; /* Déplacer vers le milieu horizontalement */
+    transform: translateX(-50%); /* Centrer horizontalement */
+    text-align: center; /* Centrer le texte */
+    width: 100%; /* Prend toute la largeur disponible */
+    display: none;
+}
+.horizontale-bar {
+    width: 79vw; /* Largeur de 75% de la largeur de la vue (viewport width) */
+    height: 2px; /* Hauteur de la barre */
+    background-color: rgb(255, 255, 255); /* Couleur de fond */
+    position: absolute; /* Position absolue */
+    top: 86%; /* Position à 50% de la hauteur de son conteneur parent */
+    left: 50%; /* Position à 50% de la largeur de son conteneur parent */
+    transform: translate(-50%, -50%); /* Centrage au milieu de son conteneur */
+}
+
+.titrePage {
+    display: block; /* Afficher l'élément */
+    position: absolute;
+    top: 0; /* Aligner en haut de la page */
+    left: 48%; /* Déplacer vers le milieu horizontalement */
+    transform: translateX(-50%); /* Centrer horizontalement */
+    text-align: center; /* Centrer le texte */
+    width: 100%; /* Prend toute la largeur disponible */
+    font-size : 20px;
+
+}
+
+
+
+
+}
