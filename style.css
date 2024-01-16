@@ -1381,7 +1381,7 @@ div>h4{
     transform: scale(1.10);
 }
 
-@media screen and (max-width: 967px) {
+@media screen and (max-width: 786px) {
     
     .principale-BO-mots_clée video {
         width: 100%; 
