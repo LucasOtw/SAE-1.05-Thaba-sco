@@ -1133,7 +1133,7 @@ input[type="button"]:hover {
     justify-content: space-around;
     align-items: center; 
     margin-top: 40%;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 .principale-voir_saison{
@@ -1163,7 +1163,7 @@ div>h4{
 .principale-BandeAnnonce {
     display: flex;
     flex-direction: row;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 .principale-BandeAnnonce video{
@@ -1237,7 +1237,7 @@ div>h4{
     max-width: 50%;
     margin-right: 3em;
     margin-left: 50%;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 .principale-text{
@@ -1259,10 +1259,11 @@ div>h4{
     height: 45px;
     border-radius: 5em;
     color: black;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     text-decoration: none;
     margin-right: 15px;
     margin-bottom: 15px;
+    padding-top: 5px;
 }
 
 .principale-motsClée a:hover, .principale-voir_saison:hover{
@@ -1287,31 +1288,35 @@ div>h4{
     flex-direction: row;
 }
 
+
+.principale-espace,  .principale-BandeAnnonce h4{
+    font-size: 1.5vw;
+}
 .principale-acteur1{
     display: flex;
     flex-direction: column;
     max-width: 50%;
 }
 .principale-acteur1{
-    margin-top: -20%;
+    margin-top: -10%;
  }
 .principale-acteur1 em {
-    text-shadow: 0 0 10px #fff,
-                 0 0 10px #efcd1d,
+    text-shadow: 
+                 
                  0 0 10px #efcd1d;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 .principale-acteur1 img{
     border-radius: 150px;
-    box-shadow: 13px -9px 15px -4px #efcd1d ;
+    box-shadow: 5px -9px 15px -4px #efefef ;
     transition: transform 0.3s ease;
     object-fit: cover ;
     background-color: black;
 }
 
 .principale-acteur1 img:hover{
-    box-shadow: 13px -9px 15px -4px #ececec ;
+    box-shadow: 10px -9px 15px -4px #efcd1d;
     transform: scale(1.10);
 }
 
@@ -1327,7 +1332,7 @@ div>h4{
     margin-left: 4em;
     margin-right: 3em;
     margin-top: auto;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 .principale-espace{
@@ -1361,7 +1366,7 @@ div>h4{
 
 .principale-ligne div{
     margin-top: -1.5em;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 
 .principale-colonne figure{
@@ -1381,6 +1386,13 @@ div>h4{
     transform: scale(1.10);
 }
 
+
+@media screen and (max-width: 930px) {
+    .principale-disparition{
+        display: none;
+    }
+
+}
 @media screen and (max-width: 786px) {
     
     .principale-BO-mots_clée video {
@@ -1401,7 +1413,7 @@ div>h4{
         margin-left: 10px;
     }
     
-    .principale-disparition, #principale-disparition{
+    #principale-disparition{
         display: none;
     }
     .principale-motsClée{
@@ -1434,7 +1446,7 @@ div>h4{
         flex-wrap: wrap;
         margin-top: 5%;
         max-width: 90%;
-        font-size: 1.5vw;
+        font-size: 1vw;
     }
     .principale-acteur1 img{
         width: 45px;
