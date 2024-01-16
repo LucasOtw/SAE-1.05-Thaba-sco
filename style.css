@@ -1141,13 +1141,12 @@ input[type="button"]:hover {
     justify-content: space-around;
     align-items: center; 
     margin-top: 40%;
-    margin-left: -13em;
     font-size: 1vw;
 }
 
 .principale-voir_saison{
     background-color:#efcd1d;
-    width: 138px;
+    width: 10%;
     height:  40px; 
     color: black;
     text-decoration: none;
@@ -1162,23 +1161,29 @@ input[type="button"]:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    font-size: 1vw;
 }
+
 
 div>h4{
     margin-left: 1em; 
 }
 
-.principale-BandeAnnonce{
+.principale-BandeAnnonce {
     display: flex;
     flex-direction: row;
     font-size: 1vw;
+}
+
+.principale-BandeAnnonce video{
+    min-width: 390px;
+    min-height: 299px;
 }
 
 .principale-avisBO{
     display: flex;
     flex-direction: column;
     align-items:flex-start;
+    margin-top: 12%;
 }
 
 .principale-avisBO figure{
@@ -1195,6 +1200,7 @@ div>h4{
 
 .principale-flex-container, .principale-voir{
     margin-left: 10px;
+    font-size: 1vw;
 }
 
 .principale-voir {
@@ -1234,7 +1240,6 @@ div>h4{
     align-items: center;
     flex-shrink: 2;
     padding: 0.5em;
-    margin-top: -6em;
     border: 1px inset #efcd1d;
     border-radius: 2em;
     max-width: 50%;
@@ -1262,10 +1267,11 @@ div>h4{
     height: 45px;
     border-radius: 5em;
     color: black;
-    padding: 10 px;
+    font-size: 1.3vw;
     text-decoration: none;
     margin-right: 15px;
     margin-bottom: 15px;
+    padding-top: 5px;
 }
 
 .principale-motsClée a:hover, .principale-voir_saison:hover{
@@ -1290,30 +1296,35 @@ div>h4{
     flex-direction: row;
 }
 
+
+.principale-espace,  .principale-BandeAnnonce h4{
+    font-size: 1.5vw;
+}
 .principale-acteur1{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     max-width: 50%;
 }
-
+.principale-acteur1{
+    margin-top: -10%;
+ }
 .principale-acteur1 em {
-    text-shadow: 0 0 10px #fff,
-                 0 0 10px #efcd1d,
+    text-shadow: 
+                 
                  0 0 10px #efcd1d;
     font-size: 1vw;
 }
 
 .principale-acteur1 img{
     border-radius: 150px;
-    box-shadow: 13px -9px 15px -4px #efcd1d ;
+    box-shadow: 5px -9px 15px -4px #efefef ;
     transition: transform 0.3s ease;
     object-fit: cover ;
     background-color: black;
 }
 
 .principale-acteur1 img:hover{
-    box-shadow: 13px -9px 15px -4px #ececec ;
+    box-shadow: 10px -9px 15px -4px #efcd1d;
     transform: scale(1.10);
 }
 
@@ -1328,6 +1339,7 @@ div>h4{
     height: 10%;
     margin-left: 4em;
     margin-right: 3em;
+    margin-top: auto;
     font-size: 1vw;
 }
 
@@ -1336,11 +1348,15 @@ div>h4{
     margin-left: 1em;
 }
 
-.principale-pourvous{
+.principale-pourvous, .principale-acteur{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+}
+
+.principale-acteur{
+    flex-shrink: 2;
 }
 
 .principale-colonne{
@@ -1358,6 +1374,7 @@ div>h4{
 
 .principale-ligne div{
     margin-top: -1.5em;
+    font-size: 1vw;
 }
 
 .principale-colonne figure{
@@ -1377,31 +1394,40 @@ div>h4{
     transform: scale(1.10);
 }
 
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 930px) {
+    .principale-disparition{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 786px) {
     
     .principale-BO-mots_clée video {
-        width: 100%; /* Utilise 100% de la largeur du conteneur parent */
-        max-width: 390px; /* Limite la largeur maximale à 390 pixels */
-        height: auto; /* Permet à la hauteur de s'ajuster automatiquement en fonction de la largeur 
-        max-height: 299px; /* Limite la hauteur maximale à 299 pixels */
+        width: 100%; 
+        height: auto; 
+        max-width: 390px;
+
+        min-width: 300px;
         margin-left: 1em;
-        margin-top: -6em;
+        margin-top: -19%;
     }
     
     .principale-BO-mots_clée{
         margin-top: 2em;
     }
     .principale-avisBO, .principale-motsClée{
-        margin-top: 10%;
+        margin-top: 14%;
+        margin-left: 10px;
     }
     
-    .principale-disparition, #principale-disparition{
+    #principale-disparition{
         display: none;
     }
     .principale-motsClée{
-        margin-top: 20em;
-        margin-left: -10em;
-        margin-right: 10em;
+        margin-right: 1em;
+        margin-top: 9em;
+        margin-left: -5em;
     }
     .principale-motsClée a{
         width: 70px;
@@ -1418,6 +1444,7 @@ div>h4{
     .principale-resumer .principale-titre, .principale-BandeAnnonce h4, .principale-titre{
         font-size: 20px;
     }
+
     .principale-ligneARP{
         flex-direction: column;
     }
@@ -1425,8 +1452,9 @@ div>h4{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-top: 5%;
         max-width: 90%;
-        font-size: 10px;
+        font-size: 1vw;
     }
     .principale-acteur1 img{
         width: 45px;
@@ -1436,7 +1464,7 @@ div>h4{
         margin-top: 1em;
         max-width: 90%;
         margin-right: 3em;
-        margin-left: 3em;
+        margin-left: 1em;
         font-size: 15px;  
         width: 650px;
         height: 150px;
@@ -1480,48 +1508,6 @@ div>h4{
 }
                                         /*****************************************************
                                                      *Fin code Page des mots clés*
-                                        *****************************************************/
-                                        /*****************************************************
-                                                     *Code Page index clés*
-                                        *****************************************************/
-
-.index-colonne{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-}
-
-.index-ligne , .index-ligne div{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-.index-ligne div{
-    margin-top: -1.5em;
-}
-
-.index-colonne figure{
-    margin-left: 0;
-}
-
-
-.index-colonne div a{
-    background-color: #efcd1d;
-    color: #000;
-    width: 138px;
-    height: 40px;
-    border-radius: 10px;
-    margin-left: 2em;
-    margin-top: 1em;
-    font-size: 22px;
-    text-align: center;
-    text-decoration: none;
-}
-
-                                        /*****************************************************
-                                                     *Fin code Page index clés*
                                         *****************************************************/
 
                                         /*****************************************************
