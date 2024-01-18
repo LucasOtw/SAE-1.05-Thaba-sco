@@ -1125,7 +1125,7 @@ input[type="button"]:hover {
                                                       *code Page Principal*
                                         *****************************************************/
 
-.principale-affiche{
+principale-affiche{
     background-image: url(images/principale_image\ de_fond_BB.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1175,6 +1175,9 @@ div>h4{
 }
 
 .principale-BandeAnnonce video{
+    margin-left: 2em;
+    width: 100%;
+    height: auto;
     min-width: 390px;
     min-height: 299px;
 }
@@ -1184,6 +1187,7 @@ div>h4{
     flex-direction: column;
     align-items:flex-start;
     margin-top: 12%;
+    margin-left: 2em;
 }
 
 .principale-avisBO figure{
@@ -1312,7 +1316,7 @@ div>h4{
     text-shadow: 
                  
                  0 0 10px #efcd1d;
-    font-size: 1vw;
+    font-size: 1.3vw;
 }
 
 .principale-acteur1 img{
@@ -1355,6 +1359,11 @@ div>h4{
     justify-content: flex-start;
 }
 
+.principale-pourvous{
+    justify-content: space-between;
+    margin-right: 1em;
+}
+
 .principale-acteur{
     flex-shrink: 2;
 }
@@ -1378,7 +1387,7 @@ div>h4{
 }
 
 .principale-colonne figure{
-    margin-left: 0;
+    margin-left: 10px;
 }
 
 .principale-retire_espace{
@@ -1403,12 +1412,18 @@ div>h4{
 }
 @media screen and (max-width: 786px) {
     
+    .principale-acteur1 em{
+        font-size: 2vw;
+    }
+
+
+
     .principale-BO-mots_clée video {
         width: 100%; 
         height: auto; 
         max-width: 390px;
 
-        min-width: 300px;
+        min-width: 270px;
         margin-left: 1em;
         margin-top: -19%;
     }
@@ -1439,9 +1454,9 @@ div>h4{
         max-width: 90%;
         margin-right: 3em;
         margin-left: 3em;
-        font-size: 15px;
+        font-size: 20px;
     }
-    .principale-resumer .principale-titre, .principale-BandeAnnonce h4, .principale-titre{
+    .principale-resumer .principale-titre, .principale-BandeAnnonce h4, .principale-titre, .principale-espace{
         font-size: 20px;
     }
 
@@ -1478,9 +1493,20 @@ div>h4{
         bottom: -2%;
     }
     .principale-flex1{
-        font-size: 10px;
+        font-size: 1.5vw;
     }
-
+    .principale-ligne div{
+        font-size: 3vw;
+    }
+    .principale-ligne h6{
+        font-size: 3vw;
+    }
+    .principale-voir_saison{
+        height: 20px;
+    }
+    .principale-flex-container, .principale-voir{
+        font-size: 2vw;
+    }
 }
                                       
 
@@ -1509,7 +1535,6 @@ div>h4{
                                         /*****************************************************
                                                      *Fin code Page des mots clés*
                                         *****************************************************/
-
                                         /*****************************************************
                                                        * Code pour Backstage *
                                         *****************************************************/
