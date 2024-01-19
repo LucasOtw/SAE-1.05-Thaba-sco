@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Josefin Sans', sans-serif; /* Police pour le texte */
     font-family: 'Lato', sans-serif; /* Une autre option de police */
@@ -24,6 +23,9 @@ h3 {
     font-size: 15px; 
 }
 
+                                       /*****************************************************
+                                                     * Code header + footer *
+                                        *****************************************************/
 /* Style pour la barre de navigation */
 @media screen and (min-width: 768px){
     .PetitNavHeader{
@@ -147,253 +149,307 @@ footer>div{
     align-self: center;
 }
 
-/* Styles de base pour la classe .wrapper */
-.wrapper {
-    width: 100%;
-    max-width: 420px;
-    background: black;
-    color: white;
-    border-radius: 10px;
-    padding: 30px 20px;
-    margin: 6em 8em 2em auto; /* Ajustez la marge pour centrer verticalement */
-    position: relative;
-}
+                                        /*****************************************************
+                                              *Fin Code pour la barre de navigation*
+                                        *****************************************************/
 
-/* Styles pour les écrans de taille moyenne (par exemple, tablettes) */
-@media screen and (max-width: 768px) {
+                                        /*****************************************************
+                                                    *Code principal de la page*
+                                        *****************************************************/
+
+
+                                        
+
+@media screen and (min-width: 768px){/*Page pour desktop*/
     .wrapper {
-        margin: 2em auto; /* Ajustez la marge pour centrer verticalement sur des écrans plus petits */
+        display: flex;
+        width: 30%; /* Utilisation d'un pourcentage pour la largeur du formulaire */
+        max-width: 420px;
+        background: black;
+        color: white;
+        border-radius: 10px;
+        padding: 30px 20px;
+        margin: 6em 2em 2em auto; /* Utilisation de 'auto' pour centrer horizontalement et ajustement vertical */
+        position: relative;
     }
-    .afficherAvis1,
-    .afficherAvis2,
-    .afficherAvis3 {
+    
+    .input-box {
+        display: flex;
+        position: relative;
+        width: 170%; /* Ajustement de la largeur à 100% */
+        height: 50px;
+        background: black;
+        margin: 30px 0;
+    }
+    
+    .input-box input {
+        display: flex;
         width: 100%;
-        max-width: 480px;
-        left: 50%;
-        transform: translateX(-50%);
+        height: 100%;
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 40px;
+        font-size: 15px;
+        color: white;
+        padding-left: 15px;
+        outline: none;
     }
-}
+    
+    .input-box i {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 15px;
+    }
+    
+    .wrapper .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120%;
+        max-width: 300px;
+        height: 50px;
+        background: #000000;
+        border: 1px solid #EFCD1D;
+        outline: none;
+        border-radius: 25px;
+        box-shadow: 0 0 8px black;
+        cursor: pointer;
+        font-size: 15px;
+        color: #fff;
+        font-weight: 600;
+        margin-top: 20px; /* Ajout d'une marge en haut pour l'espace */
+        margin-bottom: 20px; /* Ajout d'une marge en bas pour l'espace */
+        margin: auto; /* Utilisation de 'auto' pour centrer horizontalement */
+        transition: transform 0.5s ease-out;
+        text-align: center;
+        margin-left: 25%;
+    }
+    
+    .wrapper .btn:hover {
+        transform: scale(1.1);
+        background-color: #EFCD1D;
+        color: black;
+        padding: 1em;
+    }
+    
+    .wrapper .register-link {
+        font-size: 15px;
+        text-align: center;
+        margin: 20px;
+        display: flex;
+    }
+    
+    .register-link p a:hover {
+        text-decoration: underline;
+        display: flex;
+    }
 
-/* Styles pour les petits écrans (par exemple, smartphones) */
-@media screen and (max-width: 420px) {
+    .vertical-bar {
+        display: flex;
+        width: 1px;
+        height: 75vh;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        left: 50%; /* Utilisation de pourcentage pour la position à gauche */
+        top: 11em;
+    }
+    .afficherAvis1 {
+        border: 1px solid #C32525;
+        background-color: #C32525;
+        height: auto; /* Utilisation de 'auto' pour permettre à la hauteur de s'ajuster au contenu */
+        max-width: 480px; /* Utilisation d'une largeur maximale pour un meilleur contrôle */
+        padding: 1em;
+        margin: 2em auto; /* Utilisation de 'auto' pour centrer horizontalement et ajustement vertical */
+        position: relative;
+        top: 0; /* Réinitialise la position top à 0 */
+        left: 0; /* Réinitialise la position left à 0 */
+        transform: none; /* Réinitialise la transformation */
+        border-radius: 14px;
+        overflow: hidden;
+        color: black;
+        display: flex;
+    }
+    
+    .afficherAvis1 img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+        float: left;
+        transition: opacity 0.7s ease, transform 0.7s ease; /* Ajout de la transition pour l'effet hover */
+    }
+    .afficherAvis1 img:hover{
+        transform: scale(1.10);
+    }
+    
+    
+} 
+
+
+@media screen and (max-width: 768px){/*Page pour les ecrans de smartphones*/
+
+    .AvisCritiquesBody{
+        display : flex;
+    }
     .wrapper {
-        padding: 20px 10px; /* Ajustez le rembourrage pour les écrans plus petits */
+        display : flex;
     }
-
-    .wrapper h1 {
-        font-size: 18px; /* Ajustez la taille de la police pour les écrans plus petits */
+    .wrapper {
+        display: flex;
+        width: 30%; /* Utilisation d'un pourcentage pour la largeur du formulaire */
+        max-width: 420px;
+        background: black;
+        color: white;
+        border-radius: 10px;
+        padding: 30px 20px;
+        margin: 6em 2em 2em auto; /* Utilisation de 'auto' pour centrer horizontalement et ajustement vertical */
+        position: relative;
     }
-
-    .wrapper .TitreResponsive {
-        display: block; /* Affichez l'élément TitreResponsive sur les écrans plus petits */
+    
+    .input-box {
+        display: flex;
+        position: relative;
+        width: 170%; /* Ajustement de la largeur à 100% */
+        height: 50px;
+        background: black;
+        margin: 30px 0;
     }
-
-    .wrapper .wrapper h1 {
-        display: none; /* Masquez l'élément h1 sur les écrans plus petits */
-    }
-    .afficherAvis1,
-    .afficherAvis2,
-    .afficherAvis3 {
+    
+    .input-box input {
+        display: flex;
         width: 100%;
-        max-width: 100%;
-        margin: 2em auto; /* Ajustez la marge pour centrer verticalement sur des écrans plus petits */
-        left: auto;
-        transform: none;
+        height: 100%;
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 40px;
+        font-size: 15px;
+        color: white;
+        padding-left: 15px;
+        outline: none;
     }
-}
+    
+    .input-box i {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 15px;
+    }
+    
+    .wrapper .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120%;
+        max-width: 300px;
+        height: 50px;
+        background: #000000;
+        border: 1px solid #EFCD1D;
+        outline: none;
+        border-radius: 25px;
+        box-shadow: 0 0 8px black;
+        cursor: pointer;
+        font-size: 15px;
+        color: #fff;
+        font-weight: 600;
+        margin-top: 20px; /* Ajout d'une marge en haut pour l'espace */
+        margin-bottom: 20px; /* Ajout d'une marge en bas pour l'espace */
+        margin: auto; /* Utilisation de 'auto' pour centrer horizontalement */
+        transition: transform 0.5s ease-out;
+        text-align: center;
+        margin-left: 25%;
+    }
+    
+    .wrapper .btn:hover {
+        transform: scale(1.1);
+        background-color: #EFCD1D;
+        color: black;
+        padding: 1em;
+    }
+    
+    .wrapper .register-link {
+        font-size: 15px;
+        text-align: center;
+        margin: 20px;
+        display: flex;
+    }
+    
+    .register-link p a:hover {
+        text-decoration: underline;
+        display: flex;
+    }
+    .vertical-bar {
+        display: none;
+    }
 
-.input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    background: black;
-    margin: 30px 0;
-}
+    .afficherAvis1 {
+        border: 1px solid #C32525;
+        background-color: #C32525;
+        height: auto; /* Utilisation de 'auto' pour permettre à la hauteur de s'ajuster au contenu */
+        max-width: 480px; /* Utilisation d'une largeur maximale pour un meilleur contrôle */
+        padding: 1em;
+        margin: 2em auto; /* Utilisation de 'auto' pour centrer horizontalement et ajustement vertical */
+        position: relative;
+        top: 0; /* Réinitialise la position top à 0 */
+        left: 0; /* Réinitialise la position left à 0 */
+        transform: none; /* Réinitialise la transformation */
+        border-radius: 14px;
+        overflow: hidden;
+        color: black;
+        display: flex;
+    }
+    
+    .afficherAvis1 img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+        float: left;
+        transition: opacity 0.7s ease, transform 0.7s ease; /* Ajout de la transition pour l'effet hover */
+    }
 
-.input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: 2px solid white;
-    border-radius: 40px;
-    font-size: 15px;
-    color: white;
-    padding-left: 15px;
-    outline: none;
-}
+    .afficherAvis1 img:hover{
+        transform: scale(1.10);
+    }
 
-.input-box i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 15px;
-}
+    .afficherAvis2 {
+        border: 1px solid #C32525;
+        background-color: #C32525;
+        height: 135px;
+        width: 480px;
+        padding: 1em;
+        margin-left: 1em;
+        margin-top: 2em;
+        position: absolute;
+        top: 26em; /* Place le bloc en haut de la page */
+        left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
+        transform: translateX(-50%); /* Recentre horizontalement le bloc */
+        border-radius: 14px;
+        overflow: hidden;
+        color : black;
+        display : flex;
 
-.wrapper .btn {
-    width: 79%;
-    height: 50px;
-    background: #000000;
-    border: 1px solid #EFCD1D;
-    outline: none;
-    border-radius: 70px;
-    box-shadow: 0 0 10px black;
-    cursor: pointer;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    margin-left: 3.5em;
-    margin-top: 1em;
-    transition: transform 0.5s ease-out;
-}
+    
+    }
+    
+    .afficherAvis2 img {
+        width: 70px; /* Taille de l'image */
+        height: 70px; /* Taille de l'image */
+        border-radius: 50%; /* Arrondit l'image */
+        object-fit: cover; /* Ajuste la taille de l'image sans déformer */
+        margin-right: 20px; /* Espacement entre l'image et le texte */
+        float: left; /* Place l'image à gauche du texte */
+        transition: opacity 0.3s ease;
 
-.wrapper .btn:hover {
-    transform: scale(1.1);
-    background-color: #EFCD1D;
-    color: black;
-}
+    }
 
-.wrapper .register-link {
-    font-size: 15px;
-    text-align: center;
-    margin: 20px;
-}
-
-.register-link p a:hover {
-    text-decoration: underline;
-}
-
-.vertical-bar {
-    width: 3px;
-    height: 75vh;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    left: 48.5em;
-    top: 14em;
-}
-
-.afficherAvis1,
-.afficherAvis2,
-.afficherAvis3 {
-    border: 1px solid #C32525;
-    background-color: #C32525;
-    height: 135px;
-    width: 480px;
-    padding: 1em;
-    margin-left: 1em;
-    margin-top: 2em;
-    position: absolute;
-    left: 17%;
-    transform: translateX(-50%);
-    border-radius: 14px;
-    overflow: hidden;
-    color: black;
-    display: flex;
-}
-
-.titreavis {
-    color: white;
-    font-size: 20px;
-    margin : 1em;
-    position: absolute;
-    top: 8.5em;
-    left: 0%; /* Vous pouvez ajuster la valeur left pour centrer l'élément si nécessaire */
-}
-.bonjour {
-left : 10em;
-
-}
-.titrePage {
-    display: none;
-}
-
-
-@media screen and (max-width: 767px) {
-.wrapper {
-    padding: 30px 40px;
-    top: 47em; 
-    background-color: transparent;
-}
-
-.wrapper h1 {
-    text-align: center; /* Ajout de la règle de centrage */
-    margin-top: 0; /* Réinitialisation de la marge si nécessaire */
-}
-
-
-
-/* Styles pour les appareils mobiles */
-.afficherAvis1,
-.afficherAvis2,
-.afficherAvis3 {
-    width: 70%; 
-    left: 7%; 
-    transform: translateX(0); 
-    margin-left : 1em;
-}
-
-.afficherAvis1 {
-    top : 3em;
-}
-
-.afficherAvis2 {
-    top : 15em;
-}
-
-.afficherAvis3 {
-    top : 27em;
-}
-
-.footer2avis {    /* change le nom lucas*/
-    top : 90em;
-}
-
-.vertical-bar {
-    display : none;
-}
-
-.input-box {
-    width : 80%;
-    background-color: transparent;
-}
-
-.wrapper .btn {
-   width: 250px;
-   background-color: transparent;
-}
-
-.titreavis {
-    position: absolute;
-    top: 0; /* Aligner en haut de la page */
-    left: 45%; /* Déplacer vers le milieu horizontalement */
-    transform: translateX(-50%); /* Centrer horizontalement */
-    text-align: center; /* Centrer le texte */
-    width: 100%; /* Prend toute la largeur disponible */
-    display: none;
-}
-.horizontale-bar {
-    width: 79vw; /* Largeur de 75% de la largeur de la vue (viewport width) */
-    height: 2px; /* Hauteur de la barre */
-    background-color: rgb(255, 255, 255); /* Couleur de fond */
-    position: absolute; /* Position absolue */
-    top: 86%; /* Position à 50% de la hauteur de son conteneur parent */
-    left: 50%; /* Position à 50% de la largeur de son conteneur parent */
-    transform: translate(-50%, -50%); /* Centrage au milieu de son conteneur */
-}
-
-.titrePage {
-    display: block; /* Afficher l'élément */
-    position: absolute;
-    top: 0; /* Aligner en haut de la page */
-    left: 48%; /* Déplacer vers le milieu horizontalement */
-    transform: translateX(-50%); /* Centrer horizontalement */
-    text-align: center; /* Centrer le texte */
-    width: 100%; /* Prend toute la largeur disponible */
-    font-size : 20px;
-
-}
-
-
-
-
+    .afficherAvis2 img:hover{
+        transform: scale(1.10);
+    }
 }
