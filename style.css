@@ -159,309 +159,309 @@ footer>div{
                                                 * Code Page Avis & Critiques *
                                         *****************************************************/
 
+                                      
 
-.wrapper {
-        width: 100%;
-        max-width: 420px;
-        background: black;
-        color: white;
-        border-radius: 10px;
-        padding: 30px 20px;
-        margin: 6em 8em 2em auto; /* Ajustez la marge pour centrer verticalement */
-        position : relative;
-        
-    }
-
-        
-    /* Styles pour les différents éléments du formulaire */
-    .wrapper h1 {
-       font-size: 20px; 
-       text-align: center;
-    }
-    
-    .wrapper .TitreResponsive {
-       display : none;
-    }
-    
-    .input-box {
-        position: relative;
-        width: 100%;
-        height: 50px;
-        background: black;
-        margin: 30px 0;
-    }
-    
-    .input-box input {
-        width: 100%;
-        height: 100%;
-        background: transparent;
-        border: 2px solid white;
-        border-radius: 40px;
-        font-size: 15px;
-        color: white;
-        padding-left: 15px;
-        outline: none;
-    }
-    
-    .input-box i {
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 15px;
-    }
-    
-    .wrapper .btn {
-        width: 79%;
-        height: 50px;
-        background: #000000;
-        border: 1px solid #EFCD1D;
-        outline: none;
-        border-radius: 70px;
-        box-shadow: 0 0 10px black;
-        cursor: pointer;
-        font-size: 15px;
-        color: rgb(255, 255, 255);
-        font-weight: 600;
-        margin-left: 3.5em;
-        margin-top: 1em;
-        transition: transform 0.5s ease-out;
-    }
-    
-    .wrapper .btn:hover {
-        transform: scale(1.1);
-        background-color: #EFCD1D;
-        color: black;
-    }
-    
-    .wrapper .register-link {
-        font-size: 15px;
-        text-align: center;
-        margin: 20px;
-    }
-    
-    .register-link p a:hover {
-        text-decoration: underline;
-    }
-    
-    .vertical-bar {
-        width: 3px;
-        height: 75vh;
-        background-color: rgb(255, 255, 255);
-        position: absolute;
-        left: 48.5em;
-        top: 14em;
-    }
-    
-    .afficherAvis1 {
-        border: 1px solid #C32525;
-        background-color: #C32525;
-        height: 135px;
-        width: 480px;
-        padding: 1em;
-        margin-left: 1em;
-        margin-top: 2em;
-        position: absolute;
-        top: 14em; /* Place le bloc en haut de la page */
-        left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
-        transform: translateX(-50%); /* Recentre horizontalement le bloc */
-        border-radius: 14px;
-        overflow: hidden;
-        color : black;
-        display: flex;
-    }
-
-
-    
-    .afficherAvis1 img {
-        width: 70px; /* Taille de l'image */
-        height: 70px; /* Taille de l'image */
-        border-radius: 50%; /* Arrondit l'image */
-        object-fit: cover; /* Ajuste la taille de l'image sans déformer */
-        margin-right: 20px; /* Espacement entre l'image et le texte */
-        float: left; /* Place l'image à gauche du texte */
-        transition: opacity 0.7s ease;
-
-    }
-
-    .afficherAvis1 img:hover{
-        transform: scale(1.10);
-    }
-    
-    .afficherAvis2 {
-        border: 1px solid #C32525;
-        background-color: #C32525;
-        height: auto; /* Utilisation de 'auto' pour permettre à la hauteur de s'ajuster au contenu */
-        max-width: 480px; /* Utilisation d'une largeur maximale pour un meilleur contrôle */
-        padding: 1em;
-        margin: 2em auto; /* Utilisation de 'auto' pour centrer horizontalement et ajustement vertical */
-        position: relative;
-        top: 0; /* Réinitialise la position top à 0 */
-        left: 0; /* Réinitialise la position left à 0 */
-        transform: none; /* Réinitialise la transformation */
-        border-radius: 14px;
-        overflow: hidden;
-        color: black;
-        display: flex;
-    }
-    
-    .afficherAvis2 img {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 20px;
-        float: left;
-        transition: opacity 0.3s ease, transform 0.3s ease; /* Ajout de la transition pour l'effet hover */
-    }
-
-    .afficherAvis2 img:hover{
-        transform: scale(1.10);
-    }
-    
-    
-    .afficherAvis3 {
-        border: 1px solid #EFCD1D;
-        background-color: #EFCD1D;
-        height: 135px;
-        width: 480px;
-        padding: 1em;
-        margin-left: 1em;
-        margin-top: 2em;
-        position: absolute;
-        top: 38em; /* Place le bloc en haut de la page */
-        left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
-        transform: translateX(-50%); /* Recentre horizontalement le bloc */
-        border-radius: 14px;
-        overflow: hidden;
-        color : black;
-        display : flex;
-
-        
-    }
-    
-    .afficherAvis3 img {
-        width: 70px; /* Taille de l'image */
-        height: 70px; /* Taille de l'image */
-        border-radius: 50%; /* Arrondit l'image */
-        object-fit: cover; /* Ajuste la taille de l'image sans déformer */
-        margin-right: 20px; /* Espacement entre l'image et le texte */
-        float: left; /* Place l'image à gauche du texte */
-        transition: opacity 0.3s ease;
-
-    }
-
-    .afficherAvis3 img:hover{
-            transform: scale(1.10);
-
-    }
-    
-    .titreavis {
-        color: white;
-        font-size: 20px;
-        margin : 1em;
-        position: absolute;
-        top: 8.5em;
-        left: 0%; /* Vous pouvez ajuster la valeur left pour centrer l'élément si nécessaire */
-    }
-.bonjour {
-    left : 10em;
-    
-}
-    .titrePage {
-        display: none;
-    }
-    
-
-    @media screen and (max-width: 767px) {
-    .wrapper {
-        padding: 30px 40px;
-        top: 47em; 
-        background-color: transparent;
-    }
-    
-    .wrapper h1 {
-        text-align: center; /* Ajout de la règle de centrage */
-        margin-top: 0; /* Réinitialisation de la marge si nécessaire */
-    }
-    
-   
-
-    /* Styles pour les appareils mobiles */
-    .afficherAvis1,
-    .afficherAvis2,
-    .afficherAvis3 {
-        width: 70%; 
-        left: 7%; 
-        transform: translateX(0); 
-        margin-left : 1em;
-    }
-
-    .afficherAvis1 {
-        top : 3em;
-    }
-
-    .afficherAvis2 {
-        top : 15em;
-    }
-
-    .afficherAvis3 {
-        top : 27em;
-    }
-
-    .footer2avis {    /* change le nom lucas*/
-        top : 90em;
-    }
-
-    .vertical-bar {
-        display : none;
-    }
-
-    .input-box {
-        width : 80%;
-        background-color: transparent;
-    }
-
-    .wrapper .btn {
-       width: 250px;
-       background-color: transparent;
-    }
-
-    .titreavis {
-        position: absolute;
-        top: 0; /* Aligner en haut de la page */
-        left: 45%; /* Déplacer vers le milieu horizontalement */
-        transform: translateX(-50%); /* Centrer horizontalement */
-        text-align: center; /* Centrer le texte */
-        width: 100%; /* Prend toute la largeur disponible */
-        display: none;
-    }
-    .horizontale-bar {
-        width: 79vw; /* Largeur de 75% de la largeur de la vue (viewport width) */
-        height: 2px; /* Hauteur de la barre */
-        background-color: rgb(255, 255, 255); /* Couleur de fond */
-        position: absolute; /* Position absolue */
-        top: 86%; /* Position à 50% de la hauteur de son conteneur parent */
-        left: 50%; /* Position à 50% de la largeur de son conteneur parent */
-        transform: translate(-50%, -50%); /* Centrage au milieu de son conteneur */
-    }
-
-    .titrePage {
-        display: block; /* Afficher l'élément */
-        position: absolute;
-        top: 0; /* Aligner en haut de la page */
-        left: 48%; /* Déplacer vers le milieu horizontalement */
-        transform: translateX(-50%); /* Centrer horizontalement */
-        text-align: center; /* Centrer le texte */
-        width: 100%; /* Prend toute la largeur disponible */
-        font-size : 20px;
-
-    }
-    
-
- 
-    
-}
+                                        @media screen and (min-width: 768px){/*Page pour desktop*/
+                                            .wrapper {
+                                                display: flex;
+                                                width: 30%; /* Utilisation d'un pourcentage pour la largeur du formulaire */
+                                                max-width: 420px;
+                                                background: black;
+                                                color: white;
+                                                border-radius: 10px;
+                                                padding: 30px 20px;
+                                                margin: 6em 10em -24em auto; /* Utilisation de 'auto' pour centrer horizontalement et ajustement vertical */
+                                                position: relative;
+                                            }
+                                            
+                                            .input-box {
+                                                display: flex;
+                                                position: relative;
+                                                width: 170%; /* Ajustement de la largeur à 100% */
+                                                height: 50px;
+                                                background: black;
+                                                margin: 30px 0;
+                                            }
+                                            
+                                            .input-box input {
+                                                display: flex;
+                                                width: 100%;
+                                                height: 100%;
+                                                background: transparent;
+                                                border: 2px solid white;
+                                                border-radius: 40px;
+                                                font-size: 15px;
+                                                color: white;
+                                                padding-left: 15px;
+                                                outline: none;
+                                            }
+                                            
+                                            .input-box i {
+                                                display: flex;
+                                                position: absolute;
+                                                right: 20px;
+                                                top: 50%;
+                                                transform: translateY(-50%);
+                                                font-size: 15px;
+                                            }
+                                            
+                                            .wrapper .btn {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                width: 120%;
+                                                max-width: 300px;
+                                                height: 50px;
+                                                background: #000000;
+                                                border: 1px solid #EFCD1D;
+                                                outline: none;
+                                                border-radius: 25px;
+                                                box-shadow: 0 0 8px black;
+                                                cursor: pointer;
+                                                font-size: 15px;
+                                                color: #fff;
+                                                font-weight: 600;
+                                                margin-top: 20px; /* Ajout d'une marge en haut pour l'espace */
+                                                margin-bottom: 20px; /* Ajout d'une marge en bas pour l'espace */
+                                                margin: auto; /* Utilisation de 'auto' pour centrer horizontalement */
+                                                transition: transform 0.5s ease-out;
+                                                text-align: center;
+                                                margin-left: 25%;
+                                            }
+                                            
+                                            .wrapper .btn:hover {
+                                                transform: scale(1.1);
+                                                background-color: #EFCD1D;
+                                                color: black;
+                                                padding: 1em;
+                                            }
+                                            
+                                            .wrapper .register-link {
+                                                font-size: 15px;
+                                                text-align: center;
+                                                margin: 20px;
+                                                display: flex;
+                                            }
+                                            
+                                            .register-link p a:hover {
+                                                text-decoration: underline;
+                                                display: flex;
+                                            }
+                                        
+                                            .vertical-bar {
+                                                display: flex;
+                                                width: 1px;
+                                                height: 100vh;
+                                                background-color: rgb(255, 255, 255);
+                                                position: absolute;
+                                                left: 50%; /* Utilisation de pourcentage pour la position à gauche */
+                                                top: 11em;
+                                            }
+                                        
+                                        
+                                            .titreaviscritiques h2 {
+                                                margin-left: 3em;
+                                                margin-bottom: 1em;
+                                                font-size: 20px;
+                                            }
+                                            
+                                            .avis-container {
+                                                display: flex;
+                                                flex-direction: column; /* Empile les blocs les uns sur les autres */
+                                                top: 0;
+                                                
+                                            }
+                                            
+                                            .afficherAvis1,
+                                            .afficherAvis2,
+                                            .afficherAvis3 {
+                                                border: 1px solid;
+                                                border-color: #C32525; /* Couleur du bord pour le premier bloc, à ajuster pour les autres */
+                                                background-color: #C32525; /* Couleur du fond à ajuster pour les autres blocs */
+                                                height: auto;
+                                                max-width: 480px;
+                                                padding: 1em;
+                                                margin: 0em 3em 2em; /* Ajout d'une marge en haut pour les blocs suivants */        border-radius: 14px;
+                                                overflow: hidden;
+                                                color: black;
+                                                display: flex;
+                                            }
+                                            .afficherAvis1 img,
+                                            .afficherAvis2 img,
+                                            .afficherAvis3 img {
+                                                width: 70px;
+                                                height: 70px;
+                                                border-radius: 50%;
+                                                object-fit: cover;
+                                                margin-right: 20px;
+                                                margin-bottom: 10px; /* Ajout de marge en bas de l'image */
+                                                transition: opacity 0.3s ease;
+                                            } 
+                                        
+                                            
+                                            /* Styles spécifiques pour le bloc 1 */
+                                            .afficherAvis1 img:hover {
+                                                transform: scale(1.10);
+                                            }
+                                            
+                                            /* Styles spécifiques pour le bloc 2 */
+                                            .afficherAvis2 img:hover {
+                                                transform: scale(1.10);
+                                            }
+                                            
+                                            /* Styles spécifiques pour le bloc 3 */
+                                            .afficherAvis3 img:hover {
+                                                transform: scale(1.10);
+                                            }
+                                            
+                                        } 
+                                        
+                                        
+                                        @media screen and (max-width: 768px) {
+                                            .AvisCritiquesBody {
+                                                display: flex;
+                                                flex-direction: column;
+                                            }
+                                        
+                                            .wrapper {
+                                                order: 1;
+                                                display: flex;
+                                                width: 54%;
+                                                max-width: 420px;
+                                                background: transparent;
+                                                color: white;
+                                                border-radius: 10px;
+                                                padding: 30px 20px;
+                                                margin: 6em 8em 1em auto;
+                                                position: relative;
+                                            }
+                                            .input-box {
+                                                display: flex;
+                                                position: relative;
+                                                width: 170%; /* Ajustement de la largeur à 100% */
+                                                height: 50px;
+                                                background: transparent;
+                                                margin: 30px 0;
+                                            }
+                                            
+                                            .input-box input {
+                                                display: flex;
+                                                width: 100%;
+                                                height: 100%;
+                                                background: transparent;
+                                                border: 2px solid white;
+                                                border-radius: 40px;
+                                                font-size: 15px;
+                                                color: white;
+                                                padding-left: 15px;
+                                                outline: none;
+                                            }
+                                            
+                                            .input-box i {
+                                                display: flex;
+                                                position: absolute;
+                                                right: 20px;
+                                                top: 50%;
+                                                transform: translateY(-50%);
+                                                font-size: 15px;
+                                            }
+                                            
+                                            .wrapper .btn {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                width: 120%;
+                                                max-width: 300px;
+                                                height: 50px;
+                                                background: #000000;
+                                                border: 1px solid #EFCD1D;
+                                                outline: none;
+                                                border-radius: 25px;
+                                                box-shadow: 0 0 8px black;
+                                                cursor: pointer;
+                                                font-size: 15px;
+                                                color: #fff;
+                                                font-weight: 600;
+                                                margin-top: 20px; /* Ajout d'une marge en haut pour l'espace */
+                                                margin-bottom: 20px; /* Ajout d'une marge en bas pour l'espace */
+                                                margin: auto; /* Utilisation de 'auto' pour centrer horizontalement */
+                                                transition: transform 0.5s ease-out;
+                                                text-align: center;
+                                                margin-left: 25%;
+                                            }
+                                            
+                                            .wrapper .btn:hover {
+                                                transform: scale(1.1);
+                                                background-color: #EFCD1D;
+                                                color: black;
+                                                padding: 1em;
+                                            }
+                                            
+                                            .wrapper .register-link {
+                                                font-size: 15px;
+                                                text-align: center;
+                                                margin: 20px;
+                                                display: flex;
+                                            }
+                                            
+                                            .register-link p a:hover {
+                                                text-decoration: underline;
+                                                display: flex;
+                                            }
+                                        
+                                            .titreaviscritiques h2 {
+                                                margin-left: 3em;
+                                                margin-bottom: 1em;
+                                                font-size: 20px;
+                                            }
+                                        
+                                            .avis-container {
+                                                display: flex;
+                                                flex-direction: column;
+                                                top: 0;
+                                            }
+                                        
+                                            .afficherAvis1,
+                                            .afficherAvis2,
+                                            .afficherAvis3 {
+                                                border: 1px solid;
+                                                border-color: #C32525;
+                                                background-color: #C32525;
+                                                height: auto;
+                                                max-width: 480px;
+                                                padding: 1em;
+                                                margin: 2em 3em 2em;
+                                                border-radius: 14px;
+                                                overflow: hidden;
+                                                color: black;
+                                                display: flex;
+                                                order: 2;
+                                            }
+                                        
+                                            .afficherAvis1 img,
+                                            .afficherAvis2 img,
+                                            .afficherAvis3 img {
+                                                width: 70px;
+                                                height: 70px;
+                                                border-radius: 50%;
+                                                object-fit: cover;
+                                                margin-right: 20px;
+                                                margin-bottom: 10px;
+                                                transition: opacity 0.3s ease;
+                                            }
+                                        
+                                            .afficherAvis1 img:hover {
+                                                transform: scale(1.10);
+                                            }
+                                        
+                                            .afficherAvis2 img:hover {
+                                                transform: scale(1.10);
+                                            }
+                                        
+                                            .afficherAvis3 img:hover {
+                                                transform: scale(1.10);
+                                            }
+                                        }
 
                                         /*****************************************************
                                                   * Code Page Compte utilisateur *
