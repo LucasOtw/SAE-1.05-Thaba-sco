@@ -285,7 +285,72 @@ footer>div{
     .afficherAvis1 img:hover{
         transform: scale(1.10);
     }
+    .afficherAvis2 {
+        border: 1px solid #C32525;
+        background-color: #C32525;
+        height: 135px;
+        max-width: 480px;
+        padding: 1em;
+        margin-left: 1em;
+        margin-top: 2em;
+        position: relative;
+        top: 26em; /* Place le bloc en haut de la page */
+        left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
+        transform: translateX(-50%); /* Recentre horizontalement le bloc */
+        border-radius: 14px;
+        overflow: hidden;
+        color : black;
+        display : flex;
+
     
+    }
+    
+    .afficherAvis2 img {
+        width: 70px; /* Taille de l'image */
+        height: 70px; /* Taille de l'image */
+        border-radius: 50%; /* Arrondit l'image */
+        object-fit: cover; /* Ajuste la taille de l'image sans déformer */
+        margin-right: 20px; /* Espacement entre l'image et le texte */
+        float: left; /* Place l'image à gauche du texte */
+        transition: opacity 0.3s ease;
+
+    }
+
+    .afficherAvis2 img:hover{
+        transform: scale(1.10);
+    }
+
+    .afficherAvis3 {
+        border: 1px solid #EFCD1D;
+        background-color: #EFCD1D;
+        height: auto; /* Utilisation de 'auto' pour permettre à la hauteur de s'ajuster au contenu */
+        max-width: 480px; /* Utilisation d'une largeur maximale pour un meilleur contrôle */
+        padding: 1em;
+        margin: 2em auto; /* Utilisation de 'auto' pour centrer horizontalement et ajustement vertical */
+        position: relative;
+        top: 0; /* Réinitialise la position top à 0 */
+        left: 0; /* Réinitialise la position left à 0 */
+        transform: none; /* Réinitialise la transformation */
+        border-radius: 14px;
+        overflow: hidden;
+        color: black;
+        display: flex;
+    }
+    
+    .afficherAvis3 img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+        float: left;
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Ajout de la transition pour l'effet hover */
+    }
+    
+    .afficherAvis3 img:hover{
+        transform: scale(1.10);
+
+}
     
 } 
 
@@ -387,69 +452,4 @@ footer>div{
         display: none;
     }
 
-    .afficherAvis1 {
-        border: 1px solid #C32525;
-        background-color: #C32525;
-        height: auto; /* Utilisation de 'auto' pour permettre à la hauteur de s'ajuster au contenu */
-        max-width: 480px; /* Utilisation d'une largeur maximale pour un meilleur contrôle */
-        padding: 1em;
-        margin: 2em auto; /* Utilisation de 'auto' pour centrer horizontalement et ajustement vertical */
-        position: relative;
-        top: 0; /* Réinitialise la position top à 0 */
-        left: 0; /* Réinitialise la position left à 0 */
-        transform: none; /* Réinitialise la transformation */
-        border-radius: 14px;
-        overflow: hidden;
-        color: black;
-        display: flex;
-    }
-    
-    .afficherAvis1 img {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 20px;
-        float: left;
-        transition: opacity 0.7s ease, transform 0.7s ease; /* Ajout de la transition pour l'effet hover */
-    }
-
-    .afficherAvis1 img:hover{
-        transform: scale(1.10);
-    }
-
-    .afficherAvis2 {
-        border: 1px solid #C32525;
-        background-color: #C32525;
-        height: 135px;
-        width: 480px;
-        padding: 1em;
-        margin-left: 1em;
-        margin-top: 2em;
-        position: absolute;
-        top: 26em; /* Place le bloc en haut de la page */
-        left: 17%; /* Décalage de la gauche de 50% de la largeur du parent */
-        transform: translateX(-50%); /* Recentre horizontalement le bloc */
-        border-radius: 14px;
-        overflow: hidden;
-        color : black;
-        display : flex;
-
-    
-    }
-    
-    .afficherAvis2 img {
-        width: 70px; /* Taille de l'image */
-        height: 70px; /* Taille de l'image */
-        border-radius: 50%; /* Arrondit l'image */
-        object-fit: cover; /* Ajuste la taille de l'image sans déformer */
-        margin-right: 20px; /* Espacement entre l'image et le texte */
-        float: left; /* Place l'image à gauche du texte */
-        transition: opacity 0.3s ease;
-
-    }
-
-    .afficherAvis2 img:hover{
-        transform: scale(1.10);
-    }
 }
