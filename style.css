@@ -471,122 +471,118 @@ footer>div{
 /* Styles pour les ordinateurs de bureau */
 @media screen and (min-width: 768px) {
     .TitreProfilPage {
-        font-size: 20px;
+        font-size: 2rem; /* Utilisation d'une unité relative pour la taille de police */
         color: white;
         display: flex;
-
- 
+        justify-content: center; /* Centrer le texte horizontalement */
+        margin-top: 1em; /* Ajout d'une marge en haut pour l'espace */
     }
-
+    
     .InfosPersonnelles {
-        display: flex;
         border: 1px solid white;
         border-radius: 15px;
-        height: 650px;
-        width: 40%;
+        max-width: 600px; /* Utilisation d'une largeur maximale pour les grandes résolutions */
         margin: 0 auto;
         overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
+        height : 619px;
     }
     
     .InfosPersonnelles img {
-        display: flex;
         width: 140px;
         height: 140px;
         border-radius: 50%;
         object-fit: cover;
-        margin-top: 2em;
+        margin-top: 1em;
+
     }
 
-    .wrapper2 {
-        display: flex;
-        width: 30%; /* Utilisation d'un pourcentage pour la largeur du formulaire */
-        max-width: 420px;
-        background: black;
-        color: white;
-        border-radius: 10px;
-        padding: 30px 20px;
-        margin: 6em 10em -24em auto; /* Utilisation de 'auto' pour centrer horizontalement et ajustement vertical */
-        position: relative;
-    }
+        .wrapper2 {
+            display: flex;
+            max-width: 420px;
+            background: black;
+            color: white;
+            border-radius: 10px;
+            padding: 30px 20px;
+            margin: 2em 10em -24em auto; /* Utilisation de 'auto' pour centrer horizontalement et ajustement vertical */
+            position: relative;
+        }
     
-    .wrapper2 .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 120%;
-        max-width: 300px;
-        height: 50px;
-        background: #000000;
-        border: 1px solid #EFCD1D;
-        outline: none;
-        border-radius: 25px;
-        box-shadow: 0 0 8px black;
-        cursor: pointer;
-        font-size: 15px;
-        color: #fff;
-        font-weight: 600;
-        margin-top: 20px; /* Ajout d'une marge en haut pour l'espace */
-        margin-bottom: 20px; /* Ajout d'une marge en bas pour l'espace */
-        margin: auto; /* Utilisation de 'auto' pour centrer horizontalement */
-        transition: transform 0.5s ease-out;
-        text-align: center;
-        margin-left: 25%;
-    }
-
- 
-    .wrapper2 .btn:hover {
-        transform: scale(1.1);
-        background-color: #EFCD1D;
-        color: black;
-        padding: 1em;
-    }
-
-
-    .input-box2 {
-        display: flex;
-        position: relative;
-        width: 170%; /* Ajustement de la largeur à 100% */
-        height: 50px;
-        background: black;
-        margin: 30px 0;
-    }
-
-    .input-box2 input {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        background: transparent;
-        border: 2px solid white;
-        border-radius: 40px;
-        font-size: 15px;
-        color: white;
-        padding-left: 15px;
-        outline: none;
-    }
-
-    .input-box2 i {
-        display: flex;
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 15px;
-    }
-
-    .register-link {
-        font-size: 15px;
-        text-align: center;
-        margin: 20px;
-        display: flex;
-    }
-
-    .register-link p a:hover {
-        text-decoration: underline;
-        display: flex;
-    }
+        .input-box2 {
+            display: flex;
+            position: relative;
+            width: 170%; /* Ajustement de la largeur à 100% */
+            height: 50px;
+            background: black;
+            margin: 30px 0;
+        }
+    
+        .input-box2 input {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 40px;
+            font-size: 15px;
+            color: white;
+            padding-left: 15px;
+            outline: none;
+        }
+    
+        .input-box2 i {
+            display: flex;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 15px;
+        }
+    
+        .wrapper2 .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120%;
+            max-width: 300px;
+            height: 50px;
+            background: #000000;
+            border: 1px solid #EFCD1D;
+            outline: none;
+            border-radius: 25px;
+            box-shadow: 0 0 8px black;
+            cursor: pointer;
+            font-size: 15px;
+            color: #fff;
+            font-weight: 600;
+            margin-top: 20px; /* Ajout d'une marge en haut pour l'espace */
+            margin-bottom: 20px; /* Ajout d'une marge en bas pour l'espace */
+            margin: auto; /* Utilisation de 'auto' pour centrer horizontalement */
+            transition: transform 0.5s ease-out;
+            text-align: center;
+            margin-left: 25%;
+        }
+    
+        .wrapper2 .btn:hover {
+            transform: scale(1.1);
+            background-color: #EFCD1D;
+            color: black;
+            padding: 1em;
+        }
+    
+        .wrapper2 .register-link {
+            font-size: 15px;
+            text-align: center;
+            margin: 20px;
+            display: flex;
+        }
+    
+        .register-link p a:hover {
+            text-decoration: underline;
+            display: flex;
+        }
 
     .InfosPersonnelles>section>h2 {
         text-align: center;
@@ -595,96 +591,123 @@ footer>div{
     }
 }
 
+
+
 /* Styles pour les smartphones */
 @media screen and (max-width: 767px) {
     .TitreProfilPage {
-        font-size: 20px;
+        font-size: 2rem; /* Utilisation d'une unité relative pour la taille de police */
         color: white;
-        margin-top: 2em;
-        margin-left: 5em;
-    }
-
-    .InfosPersonnelles {
         display: flex;
+        justify-content: center; /* Centrer le texte horizontalement */
+        margin-top: 1em; /* Ajout d'une marge en haut pour l'espace */
+    }
+    
+    .InfosPersonnelles {
         border: 1px solid white;
         border-radius: 15px;
-        height: 650px;
-        width: 90%;
+        width: 421px; /* Utilisation d'une largeur maximale pour les grandes résolutions */
         margin: 0 auto;
         overflow: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
+        height : 619px;
     }
     
     .InfosPersonnelles img {
-        display: flex;
         width: 140px;
         height: 140px;
         border-radius: 50%;
         object-fit: cover;
-        margin-top: 2em;
-    }
-    .wrapper2 {
-        width: 90%;
-        background: black;
-        color: white;
-        border-radius: 10px;
-        padding: 3rem;
-        margin: 1em auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin-top: 1em;
+
     }
 
-    .wrapper .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 120%;
-        max-width: 300px;
-        height: 50px;
-        background: #000000;
-        border: 1px solid #EFCD1D;
-        outline: none;
-        border-radius: 25px;
-        box-shadow: 0 0 8px black;
-        cursor: pointer;
-        font-size: 15px;
-        color: #fff;
-        font-weight: 600;
-        margin-top: 20px; /* Ajout d'une marge en haut pour l'espace */
-        margin-bottom: 20px; /* Ajout d'une marge en bas pour l'espace */
-        margin: auto; /* Utilisation de 'auto' pour centrer horizontalement */
-        transition: transform 0.5s ease-out;
-        text-align: center;
-        margin-left: 25%;
-    }
-
- 
-    .wrapper2 .btn:hover {
-        transform: scale(1.1);
-        background-color: #EFCD1D;
-        color: black;
-        padding: 1em;
-    }
-
-    .wrapper2 .register-link {
-        font-size: 15px;
-        text-align: center;
-        margin: 20px;
-        display: flex;
-    }
-
-    .register-link p a:hover {
-        text-decoration: underline;
-    }
-
-    .InfosPersonnelles>section>h2 {
-        text-align: center;
-        margin-top: 2em;
-        font-size: 1rem;
-    }
+        .wrapper2 {
+            display: flex;
+            max-width: 420px;
+            background: transparent;
+            color: white;
+            border-radius: 10px;
+            padding: 30px 20px;
+            margin: 2em 10em -24em auto; /* Utilisation de 'auto' pour centrer horizontalement et ajustement vertical */
+            position: relative;
+        }
+    
+        .input-box2 {
+            display: flex;
+            position: relative;
+            width: 170%; /* Ajustement de la largeur à 100% */
+            height: 50px;
+            background: transparent;
+            margin: 30px 0;
+        }
+    
+        .input-box2 input {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 40px;
+            font-size: 15px;
+            color: white;
+            padding-left: 15px;
+            outline: none;
+        }
+    
+        .input-box2 i {
+            display: flex;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 15px;
+        }
+    
+        .wrapper2 .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120%;
+            max-width: 300px;
+            height: 50px;
+            background: #000000;
+            border: 1px solid #EFCD1D;
+            outline: none;
+            border-radius: 25px;
+            box-shadow: 0 0 8px black;
+            cursor: pointer;
+            font-size: 15px;
+            color: #fff;
+            font-weight: 600;
+            margin-top: 20px; /* Ajout d'une marge en haut pour l'espace */
+            margin-bottom: 20px; /* Ajout d'une marge en bas pour l'espace */
+            margin: auto; /* Utilisation de 'auto' pour centrer horizontalement */
+            transition: transform 0.5s ease-out;
+            text-align: center;
+            margin-left: 25%;
+        }
+    
+        .wrapper2 .btn:hover {
+            transform: scale(1.1);
+            background-color: #EFCD1D;
+            color: black;
+            padding: 1em;
+        }
+    
+        .wrapper2 .register-link {
+            font-size: 15px;
+            text-align: center;
+            margin: 20px;
+            display: flex;
+        }
+    
+        .register-link p a:hover {
+            text-decoration: underline;
+            display: flex;
+        }
 }
 
 
