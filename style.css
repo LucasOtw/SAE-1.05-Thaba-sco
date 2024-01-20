@@ -1209,7 +1209,7 @@ input[type="button"]:hover {
                                         *****************************************************/
 
 principale-affiche{
-    background-image: url(images/principale_image\ de_fond_BB.jpeg);
+    background-image: url(/images/imageprincipale.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -1238,6 +1238,10 @@ principale-affiche{
     align-items: center;
     justify-content: center;
     margin-right: 10px; 
+    transition: transform 0.3s ease;
+}
+.principale-voir_saison:hover{
+    transform: scale(1.10);
 }
 
 .principale-BO-mots_clée{
