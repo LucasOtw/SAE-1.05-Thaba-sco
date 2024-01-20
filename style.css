@@ -913,16 +913,122 @@ input[type="button"]:hover {
     background-color: #EFCD1D;
     border-radius: 10px;
     height: 40px;
-    width: 500px;
-    margin-left: 23em;
+    width: 341px;
+    margin-left: 35em;
     color: #000;
     text-align: center;
     padding: 1em;
 
 }
+@media screen and (max-width: 480px) {
 
+    .RechercheBar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+                                            
+    .Misenpage {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 3px; /* Ajout de marges entre les colonnes */
+    }
+                                            
+    .Misenpage2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Alignement vertical des éléments */
+        gap: 10px; /* Espace entre les éléments horizontaux */
+    }
+           
+    .RechercheBar > figure > img {
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+    
+    .RechercheBar > figure > img:hover {
+        transform: scale(1.10);
+    }
+    .RechercheBar img {
+        border-radius: 15px;
+        margin-right: 3px; /* Ajout de marges entre les images */
+    }
+    
+    /* Style pour la boîte de recherche */
+    .searchbox {
+        position: relative;
+        display: flex;
+        align-items: center;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Style pour l'input de recherche */
+    input[type="search"] {
+        width: 100%;
+        
+        padding: 10px;
+        border: 2px solid #ffffff;
+        border-radius: 20px;
+        font-size: 16px;
+        outline: none;
+        color : rgb(255, 255, 255);
+        background-color: #000000;
+        margin-top: 6em;
+    }
+    
+    /* Style pour le bouton de recherche */
+    input[type="button"] {
+        background: #000000;
+        border : 1px solid #efcd1d;
+        outline : none;
+        color: #fff;
+        border: none;
+        box-shadow: 0 0 10px black;
+        padding: 10px 20px;
+        margin-left: 20px;
+        border-radius: 40px;
+        cursor: pointer;
+        transition: transform 0.5s ease-out;
+        margin-top : 6.5em;
+        font-size : 15px;
+    
+    }
+    /* Style pour le survol du bouton */
+    input[type="button"]:hover {
+        transform: scale(1.1); 
+        background-color: #EFCD1D;
+        color : black;
+    
+    
+    }
+    
+    #contenu {
+        margin-left : 3em;
+        margin-top : 5em;
+    
+    }
+    
+    .Titre1 {
+        font-size : 20px;
+        margin-top : 4em;
+        border : 1px solid #EFCD1D;
+        background-color: #EFCD1D;
+        border-radius: 10px;
+        height: 40px;
+        width: 341px;
+        margin-left: 2em;
+        color: #000;
+        text-align: center;
+        padding: 1em;
+    
+}
 
-
+}
 
                                       
                                         /*****************************************************
@@ -1163,9 +1269,7 @@ input[type="button"]:hover {
     }
 }
 
-
-
-                                        
+                                      
                                         /*****************************************************
                                                       *code Page Principal*
                                         *****************************************************/
