@@ -171,7 +171,7 @@ footer>div{
         color: white;
         border-radius: 10px;
         padding: 30px 20px;
-        margin: 6em 10em -24em auto; /* Utilisation de 'auto' pour centrer horizontalement et ajustement vertical */
+        margin: 6em 10em -25em auto; /* Utilisation de 'auto' pour centrer horizontalement et ajustement vertical */
         position: relative;
     }
 
@@ -471,7 +471,7 @@ footer>div{
 /* Styles pour les ordinateurs de bureau */
 @media screen and (min-width: 768px) {
     .TitreProfilPage {
-        font-size: 2rem; /* Utilisation d'une unité relative pour la taille de police */
+        font-size: 1.3rem; /* Utilisation d'une unité relative pour la taille de police */
         color: white;
         display: flex;
         justify-content: center; /* Centrer le texte horizontalement */
@@ -497,6 +497,10 @@ footer>div{
         object-fit: cover;
         margin-top: 1em;
 
+    }
+    .Edited {
+        text-align: center;
+        font-size: 20px;
     }
 
         .wrapper2 {
@@ -596,7 +600,7 @@ footer>div{
 /* Styles pour les smartphones */
 @media screen and (max-width: 767px) {
     .TitreProfilPage {
-        font-size: 2rem; /* Utilisation d'une unité relative pour la taille de police */
+        font-size: 1.3rem; /* Utilisation d'une unité relative pour la taille de police */
         color: white;
         display: flex;
         justify-content: center; /* Centrer le texte horizontalement */
@@ -623,6 +627,11 @@ footer>div{
         margin-top: 1em;
 
     }
+    .Edited {
+        text-align: center;
+        font-size: 20px;
+    }
+
 
         .wrapper2 {
             display: flex;
