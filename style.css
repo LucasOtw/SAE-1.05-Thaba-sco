@@ -1164,8 +1164,10 @@ input[type="button"]:hover {
 }
 
 
+
+                                        
                                         /*****************************************************
-                                                    *Code pour les cookies*
+                                                      *code Page Principal*
                                         *****************************************************/
 #elementacacher {
     border : 1px solid #efcd1d;
@@ -1178,11 +1180,11 @@ input[type="button"]:hover {
     text-align: center;
     float: right;
     margin-top : 33em;
-                                            
+                                                                                    
 }                         
-                                        
-                                        
-                                        
+                                                                                
+                                                                                
+                                                                                
 #buttoncookies {
     background-color: black;
     border : 1px solid #efcd1d;
@@ -1194,19 +1196,17 @@ input[type="button"]:hover {
     color: white;
     position: relative;
     overflow: hidden;
-                                        
+                                                                                
 }
-                                        
+                                                                                
 #buttoncookies:hover {
     background-color: #efcd1d;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Ombre pour effet d'élévation */
     transform: translateY(-6px);
-                                        
+                                                                                
 }
-                                        
-                                        /*****************************************************
-                                                      *code Page Principal*
-                                        *****************************************************/
+
+
 
 principale-affiche{
     background-image: url(/images/imageprincipale.jpeg);
