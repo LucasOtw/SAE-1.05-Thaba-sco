@@ -1,4 +1,5 @@
 # Projet Tabasko - Plateforme de streaming
+(Les pages de ce projet ont été testées et vérifiées par W3C Markeup)
 
 Ce projet, réalisé dans le cadre d'un projet pédagogique, vise à offrir une expérience utilisateur améliorée à travers la plateforme de streaming Tabasko.
 
