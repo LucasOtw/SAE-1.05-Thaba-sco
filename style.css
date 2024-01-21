@@ -1245,6 +1245,7 @@ input[type="button"]:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 80%;
 }
 
 .episodes-saison1 h2 {
@@ -1294,7 +1295,33 @@ input[type="button"]:hover {
     margin-left: 35%;
 }
 
+@media screen and (max-width: 768px) {
+    .presentation-saison1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .bandeannonce-saison1{
+        margin-left: -6em;
+    }
+    .partiegauche-saison1 {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        width: 60%;
+        padding-right: 7em;
+    }
+    .images-saison1 div img {
+        width: 17em;
+        height: 6em;
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
 
+}
 
 
 
@@ -2099,5 +2126,3 @@ div>h4{
         margin-left: 3%;
     }
 }
-
-
