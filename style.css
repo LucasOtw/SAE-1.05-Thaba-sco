@@ -287,8 +287,8 @@ footer>div{
     }
     
     .afficherAvis3 {
-        border: 1px solid;
-        border-color: #efcd1d; /* Couleur du bord pour le premier bloc, à ajuster pour les autres */
+        position: relative; /* Ajout de la propriété position relative pour permettre le positionnement absolu de l'image */
+        border: 1px solid #efcd1d; /* Couleur du bord pour le premier bloc, à ajuster pour les autres */
         background-color: #efcd1d; /* Couleur du fond à ajuster pour les autres blocs */
         height: auto;
         max-width: 480px;
