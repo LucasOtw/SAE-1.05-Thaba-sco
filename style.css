@@ -100,6 +100,7 @@ h3 {
         width: 100%; /* Élargissement du soulignement au survol */
 }
 }
+
 @media screen and (max-width: 768px){
     .PetitNavHeader{
         display: flex;
