@@ -1310,8 +1310,8 @@ input[type="button"]:hover {
 }
 
 
-principale-affiche{
-    background-image: url(/images/imageprincipale.jpeg);
+.principale-affiche{
+    background-image: url(/SAE-1.05-Thabas-Kho/images/principale_image_de_fond_BB.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -1323,7 +1323,7 @@ principale-affiche{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-around;  
     align-items: center; 
     margin-top: 40%;
     font-size: 1vw;
