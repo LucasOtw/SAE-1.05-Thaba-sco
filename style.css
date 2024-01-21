@@ -1081,31 +1081,33 @@ input[type="button"]:hover {
     color: white;
 }
 
-.div-affiche-saison1 {
-    position: relative;
-    width: 100%;
-    
-}
-
 .affiche-saison1 {
     position: relative;
-    width: 200%;
-    height: auto;
+    width: 100%; /* Utilisez 100% pour occuper la largeur totale de son conteneur */
+    max-width: 100%; /* Ajoutez max-width pour éviter que l'image ne devienne trop grande sur de grands écrans */
+    height: 600px;
     border-radius: 15px;
-    right: 50%;
+    right: 0%;
 }
+
+
+
 
 
 .div-affiche-saison1 button {
   width: 22vh;
   height: 6vh;
   position: absolute;
-  bottom: 10%;
-  left: 5%;
+  bottom: 84%;
+  left: 19%;
   display: flex;
   justify-content: end;
   border-radius: 9px;
   background: #EFCD1D;
+  transition: transform 0.3s ease;
+}
+.div-affiche-saison1 button:hover {
+    transform: scale(1.10);
 }
 
 .div-affiche-saison1 button a {
@@ -1130,9 +1132,9 @@ input[type="button"]:hover {
 
 .moins16-saison1 {
     position: absolute;
-    top: 7%;
-    right: 2%;
-    width: 9vh;
+    top: 3.5%;
+    right: 17.3%;
+    width: 7vh;
   }
 
 .debut-saison1{
@@ -1172,13 +1174,9 @@ input[type="button"]:hover {
 
 .presentation-saison1{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
     justify-content: center;
     align-items: center;
-
-    text-align: center;
-
     width: 81%;
 }
 
@@ -1192,7 +1190,7 @@ input[type="button"]:hover {
 .infosprod-saison1{
     margin-top: 10em;
 }
-.partiegauche-saison1 {
+.partiegauche-saison1 p {
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -1237,7 +1235,6 @@ input[type="button"]:hover {
 .episodes-saison1 {
     display: flex;
     flex-direction: column;
-
     margin-top: 7em;
 }
 
@@ -1262,9 +1259,9 @@ input[type="button"]:hover {
 }
 
 .episodes-saison1 h2 {
-    align-self: center;
     height: 1px;
-    width: 20em;
+    width: 18em;
+    margin-left: 3.5em;
 }
 
 .description-episode  {
@@ -1275,16 +1272,25 @@ input[type="button"]:hover {
 }
 .description-episode  p {
     margin-top: -7em;
+    margin-left : 8%;
 }
 .episodeetduree-saison1 {
     display: flex;
     flex-direction: row;
     align-items: top;
     justify-content: top;
-
     margin-bottom: 7em;
     
 }
+#episode1 img {
+    transition: transform 0.3s ease;
+}
+
+#episode1 img:hover{
+    transform: scale(1.10);
+}
+
+
 
 .videotheque-saison1 {
     display: flex;
@@ -1297,6 +1303,72 @@ input[type="button"]:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .affiche-saison1 {
+        position: relative;
+        width: 91%; /* Utilisez 100% pour occuper la largeur totale de son conteneur */
+        max-width: 100%; /* Ajoutez max-width pour éviter que l'image ne devienne trop grande sur de grands écrans */
+        height: 224px;
+        border-radius: 15px;
+        right: 0%;
+     
+    }
+    .div-sous-affiche-saison1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 4vh;
+        font-size: 13px;
+        margin-left: 56px;
+    }
+    .moins16-saison1 {
+        position: absolute;
+        top: 1.6%;
+        right: 6%;
+        width: 6vh;
+      }
+      .episodes-saison1 h2 {
+        height: 1px;
+        width: 18em;
+        
+    }
+
+      .partiegauche-saison1 p {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        width: 155%;
+        padding-right: 7em;
+    }
+    
+    .div-affiche-saison1 button {
+        width: 19vh;
+        height: 4vh;
+        position: absolute;
+        bottom: 94.3%;
+        left: 7%;
+        display: flex;
+        justify-content: end;
+        border-radius: 9px;
+        background: #EFCD1D;
+      }
+      
+      .div-affiche-saison1 button a {
+          color: black;
+          text-decoration: none;
+          font-size: 1.5vh;
+          font-weight: 900;
+          position: absolute;
+          right: 5.5vh;
+      }
+      
+      .div-affiche-saison1 button img{
+          width: 2.5vh;
+          height: 2.5vh;
+      
+          position: absolute;
+          top:9%;
+          right: 80%;
+      }
     .presentation-saison1{
         display: flex;
         flex-direction: column;
@@ -1340,6 +1412,14 @@ input[type="button"]:hover {
     }
     .episodeetduree-saison1 h2{
         margin-top: -1.5em;
+    }
+    .debut-saison1{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
 }
