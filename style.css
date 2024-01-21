@@ -758,40 +758,47 @@ footer>div{
                                                            * Code A propos  *
                                         *****************************************************/
 /* Styles pour les ordinateurs de bureau */
+
+/* Le conteneur principal utilise flexbox pour organiser ses enfants en colonne centrée */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Style spécifique pour les titres h1 à l'intérieur d'éléments avec la classe "NotreMission" */
 .NotreMission > h1 {
     color: white;
     margin-bottom: 30px;
     margin-top: 4em;
 }
 
+/* Style pour un conteneur avec la classe "Content" */
 .Content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 80%;
     margin-top: 50px;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; /* Les enfants seront disposés en ligne avec l'ordre inversé */
 }
 
+/* Style spécifique pour les images à l'intérieur d'éléments avec la classe "ImageAPropos" */
 .ImageAPropos img {
     width: 400px;
     height: 150px;
     object-fit: cover;
     background-color: #000000;
-    transition: .3s linear;
+    transition: .3s linear; /* Animation de transition pour l'opacité et la mise à l'échelle */
 }
 
+/* Au survol, l'image devient plus transparente et se met à l'échelle */
 .ImageAPropos:hover img {
     opacity: 0.5;
     transform: scale(1.2);
 }
 
+/* Style pour les paragraphes à l'intérieur d'éléments avec les classes "Nous" et "Nous2" */
 .Nous > p,
 .Nous2 > p {
     color: white;
@@ -799,6 +806,7 @@ footer>div{
     text-align: justify;
 }
 
+/* Style pour des éléments avec les classes "first-letter" et "first-letter2" */
 .first-letter,
 .first-letter2 {
     font-size: 15px;
@@ -809,18 +817,23 @@ footer>div{
 
 /* Styles pour les smartphones */
 @media screen and (max-width: 767px) {
+
+    /* Modification des styles pour s'adapter aux écrans de moins de 767 pixels de largeur */
+
     .Content {
         width: 90%;
         flex-direction: column;
         align-items: center;
     }
 
+    /* Les images prennent la largeur totale de l'écran */
     .ImageAPropos img {
         width: 100%;
         height: auto;
         margin-bottom: 20px; 
     }
 
+    /* Ajustements des paragraphes pour les smartphones */
     .Nous > p,
     .Nous2 > p {
         max-width: 90%; 
@@ -828,11 +841,13 @@ footer>div{
         margin-left: 1em;
     }
 
+    /* Ajustements pour les éléments avec les classes "first-letter" et "first-letter2" */
     .first-letter,
     .first-letter2 {
         font-size: 20px; 
     }
 
+    /* Modification du style des titres h1 à l'intérieur d'éléments avec la classe "wrapper" */
     .wrapper h1 {
         margin-right: 0; 
         text-align: center; 
