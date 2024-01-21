@@ -1616,10 +1616,12 @@ div>h4{
     transition: transform 0.3s ease;
 }
 
-.principale-pourvous section > figure img:hover {
+.principale-pourvous section > figure img:hover , .principale-motsClée a:hover{
     transform: scale(1.10);
 }
-
+.principale-motsClée a{
+    transition: transform 0.3s ease;
+}
 
 @media screen and (max-width: 930px) {
     .principale-disparition{
