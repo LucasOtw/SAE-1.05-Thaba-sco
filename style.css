@@ -1072,6 +1072,7 @@ input[type="button"]:hover {
 }
 
                                       
+                                      
                                         /*****************************************************
                                                       * Code  Saison 1 *  
                                         *****************************************************/
@@ -1319,6 +1320,26 @@ input[type="button"]:hover {
         margin-right: 0.5em;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
+    }
+    #episode1 h2{
+        font-size: 10px;
+
+    }
+
+    #episode1 img{
+        height: 7em;
+        width: auto;
+        margin-left: 100%;
+        margin-bottom: 2em;
+    }
+    .saisonDIS{
+        display: none;
+    }
+    .episodeetduree-saison1 h2+h2{
+        margin-left: -35%;
+    }
+    .episodeetduree-saison1 h2{
+        margin-top: -1.5em;
     }
 
 }
