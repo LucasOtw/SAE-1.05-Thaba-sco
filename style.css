@@ -1746,6 +1746,39 @@ div>h4{
     .principale-acteur1 em{
         font-size: 2vw;
     }
+    #elementacacher {
+        border: 1px solid #efcd1d;
+        background-color: black;
+        border-radius: 15px;
+        padding: 2em;
+        height: 141px;
+        width: 22em;
+        text-align: center;
+        position: fixed; /* Utiliser une position fixe pour fixer la position sur la page */
+        top: 88%; /* Positionner le haut du popup à 50% de la hauteur de la page */
+        right: 18px; /* Positionner le popup à droite de la page */
+        transform: translateY(-50%); /* Ajuster la position verticale du popup */
+        z-index: 9999; /* Assurer que le popup est superposé à d'autres éléments en utilisant un index Z élevé */
+    }
+    
+    #buttoncookies {
+        background-color: black;
+        border: 1px solid #efcd1d;
+        border-radius: 15px;
+        height: 37px;
+        width: 150px;
+        margin: 0em;
+        transition: background-color 0.3s ease, transform 0.5s ease, box-shadow 0.5s ease;
+        color: white;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #buttoncookies:hover {
+        background-color: #efcd1d;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Ombre pour effet d'élévation */
+        transform: translateY(-6px);
+    }
 
 
 

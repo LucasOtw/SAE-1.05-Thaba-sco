@@ -1,3 +1,4 @@
+//Fonctionnalité recherche lucas
 function chercherContenu() {
     var a = document.getElementById("search").value.toLowerCase(); // Récupérer le mot-clé et convertir en minuscules
     var contenu = document.getElementById("contenu");

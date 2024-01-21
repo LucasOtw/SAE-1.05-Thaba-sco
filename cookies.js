@@ -1,3 +1,4 @@
+//Cookies popup lucas
 const elementacacher = document.getElementById('elementacacher');
 const buttoncookies = document.getElementById('buttoncookies');
 
