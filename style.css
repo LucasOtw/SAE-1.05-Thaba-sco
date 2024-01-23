@@ -1395,7 +1395,7 @@ input[type="button"]:hover {
     }
     #episode1 h2{
         font-size: 10px;
-
+        margin-right: 3em;
     }
 
     #episode1 img{
@@ -1412,7 +1412,7 @@ input[type="button"]:hover {
     }
     .episodeetduree-saison1 h2{
         margin-top: -1.5em;
-        margin-left: 1.5em;
+        
     }
     .debut-saison1{
         display: flex;
