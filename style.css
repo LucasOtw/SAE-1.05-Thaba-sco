@@ -1412,6 +1412,7 @@ input[type="button"]:hover {
     }
     .episodeetduree-saison1 h2{
         margin-top: -1.5em;
+        margin-left: 1.5em;
     }
     .debut-saison1{
         display: flex;
